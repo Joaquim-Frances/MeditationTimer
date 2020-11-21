@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+}
+
+h1{
+    font-family: Helvetica;
+}
+
+.timer{
+
+    text-align: center;
+
+}
+
+
+#time{
+    font-weight: bolder;
+    font-size: xx-large;
+}
