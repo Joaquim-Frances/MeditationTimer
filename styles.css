@@ -1,19 +1,50 @@
 header{
     text-align: center;
+    background-color: rgb(22, 21, 21);
 }
 
-h1{
+.title{
     font-family: Helvetica;
+    color: rgb(216, 211, 187);
 }
-
+body{
+    background-color: rgb(22, 21, 21);
+}
 .timer{
-
-    text-align: center;
-
-}
-
-
-#time{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-weight: bolder;
     font-size: xx-large;
+    color: rgb(216, 211, 187);
+
 }
+.buttonsZone{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+
+}
+
+.buttons
+{
+   
+    background-color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 10px;
+    color: rgb(216, 211, 187);
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    font-family: Helvetica;
+}
+   
+    
+
+
+
