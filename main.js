@@ -1,20 +1,43 @@
 
-let seconds = 0;
+let seconds = 20;
 let minutes = 0;
 let isRunning = false;
 let inPause = false;
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
+function addMinutes(){
+
+    minutes++;
+    printTime();
+
+}
+
+function minusMinutes(){
+
+    if(minutes <= 0){
+        minutes = 0;
+        return;
+    }
+    
+    minutes--;
+    printTime();
+}
+
 
 function timeCount(){
     
-    seconds++;
-    if(seconds == 59+1){
-        minutes++;
-        seconds = 0;
+    seconds--;
+    if(seconds == 0-1){
+        minutes--;
+        seconds = 59;
     }
     printTime();
+    
+    if(minutes == 0 && seconds == 0){
+
+        stopTimer();
+    }
     
 }
     
@@ -35,7 +58,8 @@ function startTimer(){
 
 
 function stopTimer(){
-
+    
+    
     clearInterval(myTime);
     seconds = 0;
     minutes = 0;
@@ -66,7 +90,7 @@ function printTime(){
 
         document.getElementById("seconds").innerHTML= seconds; 
     }
-    if(minutes >= 1 && minutes < 10){
+    if(minutes >= 0 && minutes < 10){
 
         document.getElementById("minutes").innerHTML= "0" + minutes;
     }
