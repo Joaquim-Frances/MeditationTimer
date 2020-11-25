@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meditation Timer</title>
+    <title>Silence</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
+    
     <header>
-        <h1 class="title">Meditation Timer</h1>
+        <h1 class="title">S I L E N C E</h1>
+        <h2 class="subtitle">meditation timer</h2>
     </header>
     <section>
         <div class="timer">
             <p id="minutes">  </p><p id="dots"> : </p><p id="seconds">  </p>
         </div>
         <div class="add">
-            <button class="timerButtons" onclick="addMinutes()">+</button><button class="timerButtons" onclick="minusMinutes()">-</button>
+            <button class="timerButtons" onclick="addMinutes(1)">+</button><button class="timerButtons" onclick="addMinutes(10)">++</button> <button class="timerButtons" onclick="minusMinutes()">-</button>
         </div>
         <div class="buttonsZone" >
             <button class="buttons" id="start" onclick="startTimer()">Start</button>
