@@ -41,7 +41,7 @@ function timeCount(){
 
     printTime();
     
-    if(minutes == 0 && seconds == 0){
+    if(minutes <= 0 && seconds <= 0){
         stopTimer();
         playSound();
     }
