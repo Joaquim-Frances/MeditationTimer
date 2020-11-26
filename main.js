@@ -1,8 +1,10 @@
 
-let seconds = 0;
+let seconds = 10;
 let minutes = 0;
 let isRunning = false;
 let inPause = false;
+let fullScreen = false;
+
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
@@ -120,9 +122,36 @@ function playSound(){
 
 }
 
+function ScreenMode(){
 
-
-
+    var elem = document.documentElement;
     
+    if(fullScreen == false){
 
+        fullScreen = true;
+
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+        
+        
+    
+    }else if (fullScreen == true) {
+
+        fullScreen = false;
+
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) { /* Safari */
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE11 */
+            document.msExitFullscreen();
+        }
+    }
+
+}
 
