@@ -12,20 +12,13 @@
 
 }
 
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
 
 header{
     text-align: center;
     /* background-color: rgb(22, 21, 21); */
-    padding-top: 50px;
+    padding-top: 150px;
 }
+
 
 .title{
     font-family: Helvetica;
@@ -34,8 +27,8 @@ header{
     margin-bottom: 1px;
 }
 
-.subtitle{
 
+.subtitle{
     font-family:'Unica One', monospace;
     color: rgb(151, 150, 146);
     font-weight: 100;
@@ -43,12 +36,14 @@ header{
     word-spacing: 10px;
     margin: 2px;
     padding-bottom: 100px;
-
 }
+
 
 body{
     background-color: rgb(22, 21, 21);
 }
+
+
 .timer{
    
     display: flex;
@@ -63,20 +58,23 @@ body{
 
 }
 
+
 #minutes, #dots, #seconds{
 
     padding-bottom: 100px;
     
 }
 
+
 .add{
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    
 }
+    
+    
+
 
 .timerButtons{
 
@@ -95,10 +93,6 @@ body{
 }
 
 
-   
-
-
-
 .buttonsZone{
    
     display: flex;
@@ -107,8 +101,8 @@ body{
     
 }
 
-.buttons
-{
+
+.buttons{
    
     background-color: rgb(10, 10, 10);
     border: none;
