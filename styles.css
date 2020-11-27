@@ -1,16 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
-#fondo{
 
-    background: url(./src/Incense-Wallpaper.jpg) no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover; 
-                background-size: 100% 100%;
-
-}
 
 
 header{
@@ -23,7 +14,8 @@ header{
 .title{
     font-family: Helvetica;
     color: rgb(216, 211, 187);
-    font-size: xx-large;
+    font-size: 30px;
+    word-spacing: 15px;
     margin-bottom: 1px;
 }
 
@@ -33,7 +25,7 @@ header{
     color: rgb(151, 150, 146);
     font-weight: 100;
     font-size: 19px;
-    word-spacing: 10px;
+    letter-spacing: 3px;
     margin: 2px;
     padding-bottom: 100px;
 }

@@ -1,4 +1,7 @@
 
-let date = new Date();
+let seconds = 0;
+let minutes = 0;
+let afterClick = new Date();
 
-console.log(date);
+document.getElementById("minutes").innerHTML = afterClick.toDateString;
+
