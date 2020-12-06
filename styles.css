@@ -7,7 +7,7 @@
 header{
     text-align: center;
     /* background-color: rgb(22, 21, 21); */
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 
@@ -32,7 +32,7 @@ header{
 
 
 body{
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(22, 19, 19);
 }
 
 
@@ -75,13 +75,13 @@ body{
     border-radius: 10px;
     color: rgb(151, 150, 146);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     margin: 10px;
     font-family: Helvetica;
-    height: 40px;
-    width: 40px;
-    font-weight: bolder;
-    font-size: large;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+    
 }
 
 
@@ -90,6 +90,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: baseline;
     
 }
 
@@ -100,9 +101,36 @@ body{
     border: none;
     border-radius: 10px;
     color: rgb(151, 150, 146);
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     margin: 5px;
     font-family: Helvetica;
+    font-weight: bold;
+    
 } 
+
+.fullButton{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+
+.screenButton{
+
+    background-color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 10px;
+    color: rgb(151, 150, 146);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 5px;
+    font-family: Helvetica;
+    font-weight: lighter;
+
+
+}

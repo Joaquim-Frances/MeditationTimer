@@ -5,20 +5,22 @@ let isRunning = false;
 let inPause = false;
 let fullScreen = false;
 
+
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
 
 
-function addMinutes(minutesAdded){
+function addTime(minutesAdded){
 
     minutes += minutesAdded;
     printTime();
+    
 }
 
 
 
-function minusMinutes(){
+function substractTime(){
 
     if(minutes <= 0){
         minutes = 0;
@@ -122,7 +124,7 @@ function playSound(){
 
 }
 
-function ScreenMode(){
+function screenMode(){
 
     var elem = document.documentElement;
     
@@ -154,4 +156,3 @@ function ScreenMode(){
     }
 
 }
-

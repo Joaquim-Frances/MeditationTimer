@@ -20,15 +20,26 @@
             <p id="seconds"></p>
         </div>
         <div class="add">
-            <button class="timerButtons" onclick="addTime()">+</button>
+            <button class="timerButtons" onclick="addTime(1)">+</button>
+            <button class="timerButtons" onclick="addTime(10)">++</button>
+            <button class="timerButtons" onclick="substractTime()">-</button>
         </div>
-   
+        <div class="buttonsZone">
+            <button class="buttons" onclick="startTimer()">Start</button>
+            <button class="buttons" onclick="pauseTimer()">Pause</button>
+            <button class="buttons" onclick="stopTimer()">Stop</button>
+            
+        </div>
+        <footer class="fullButton">
+            <button class="screenButton" onclick="screenMode()">Full <br> Screen</button>
+        </footer>
+
 
     </section>
 
 
 
-    <!-- <script src="main.js"></script> -->
-    <script src="./js/TimeCounter.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="./js/TimeCounter.js"></script> -->
 </body>
 </html>
