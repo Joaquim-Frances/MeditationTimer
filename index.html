@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silence</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>SILENCE MEDITATION TIMER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <video autoplay muted loop id="myVideo">
-        <source src="src/Smoke01.mp4" type="video/mp4">
-      </video>
+<body ondblclick="screenMode()">
     
-    <header>
-        <h1 class="title">S I L E N C E</h1>
-        <h2 class="subtitle">meditation timer</h2>
-    </header>
-    <section>
+       
+    <video  autoplay muted loop id="videoBG">
+    <source src="src/Smoke01.mp4" type="video/mp4">
+    </video>
+      
+
+        <div class="header">
+            <h1 id="title">S I L E N C E</h1>
+            <h2 id="subtitle">meditation timer</h2>
+        </div>
+    
         <div class="timer">
             <p id="minutes"></p>
             <p id="dots"> : </p>
             <p id="seconds"></p>
         </div>
-        <div class="add">
+
+        <div class="timerControl">
             <button class="timerButtons" onclick="addTime(1)">+</button>
             <button class="timerButtons" onclick="addTime(10)">++</button>
             <button class="timerButtons" onclick="substractTime()">-</button>
         </div>
+
         <div class="buttonsZone">
             <button class="buttons" onclick="startTimer()">Start</button>
             <button class="buttons" onclick="pauseTimer()">Pause</button>
             <button class="buttons" onclick="stopTimer()">Stop</button>
-            
         </div>
-        <footer class="fullButton">
+            
+        <!-- <div class="fullButton">
             <button class="screenButton" onclick="screenMode()">Full <br> Screen</button>
-        </footer>
-
-
-    </section>
-
-
-
-    <script src="main.js"></script>
-    <!-- <script src="./js/TimeCounter.js"></script> -->
-</body>
-</html>
+        </div> -->
+        <script src="main.js"></script>
+    </body>
+    </html>
