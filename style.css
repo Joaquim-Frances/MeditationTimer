@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 body{
-    background-color: #221919;
+    background-color: #221921;
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -12,8 +12,9 @@ body{
 
 #videoBG{
     position: absolute;
-    max-width: 100vw;
-    max-height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     z-index: -1;
     
