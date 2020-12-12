@@ -1,13 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 
 body{
     background-color: #141414;
     overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
+    
 }
 
 #videoBG{
@@ -16,65 +16,58 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
-    
+    z-index: -1;  
 }   
-    
+
+
 .header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    
+   position: fixed;
+   text-align: center;
+   width: 100%;
+   
 }
+
 #title{
-    font-family: Helvetica;
+    font-family: Montserrat;
     color: rgb(216, 211, 187);
-    font-size: 30px;
-    word-spacing: 15px;
-    
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 25px;  
 }
 
 #subtitle{
-
-    font-family:'Unica One', monospace;
+    font-family: Helvetica;
     color: rgb(151, 150, 146);
     font-weight: 100;
     font-size: 19px;
-    letter-spacing: 3px;
-    padding-bottom: 100px;
-    
+    letter-spacing: 7px;
+       
 }
 
-.timer{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.marc{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 250px;
+}
+   
+#minutes, #dots, #seconds{
     font-weight: bolder;
     font-size: xx-large;
     color: rgb(216, 211, 187);
-    font-family: Helvetica;
+    font-family: Montserrat;
+    letter-spacing: 10px;
 }
 
-#minutes, #dots, #seconds{
-
-    padding-bottom: 125px;
-    
-}
 .timerControl{
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.timerButtons{
-    
-    background-color: rgb(10, 10, 10);
+.timerButtons{ 
+    background-color: transparent;
     border: none;
     border-radius: 10px;
     color: rgb(151, 150, 146);
@@ -82,23 +75,24 @@ body{
     font-size: 15px;
     margin: 10px;
     font-family: Helvetica;
-    height: 35px;
-    width: 35px;
+    height: 15px;
+    width: 40px;
     font-weight: bold;
+    outline: none;
 }
     
 .buttonsZone{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;   
 }
 
 
 
 .buttons{
-   
-    background-color: rgb(10, 10, 10);
+    background-color: transparent;
     border: none;
     border-radius: 10px;
     color: rgb(151, 150, 146);
@@ -108,26 +102,5 @@ body{
     margin: 5px;
     font-family: Helvetica;
     font-weight: bold;
+    outline: none;
 } 
-    
-
-.fullButton{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.screenButton{
-
-    background-color: rgb(10, 10, 10);
-    border: none;
-    border-radius: 10px;
-    color: rgb(151, 150, 146);
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 10px;
-    margin: 5px;
-    font-family: Helvetica;
-    font-weight: lighter;
-}

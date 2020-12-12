@@ -6,40 +6,37 @@
     <title>SILENCE MEDITATION TIMER</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body ondblclick="screenMode()">
-    
-       
+<body >
+
     <video  autoplay muted loop id="videoBG">
     <source src="src/Smoke01.mp4" type="video/mp4">
     </video>
-      
 
-        <div class="header">
-            <h1 id="title">S I L E N C E</h1>
-            <h2 id="subtitle">meditation timer</h2>
-        </div>
-    
-        <div class="timer">
-            <p id="minutes"></p>
-            <p id="dots"> : </p>
-            <p id="seconds"></p>
-        </div>
+    <header class="header">
+        <h1 id="title">SILENCE</h1>
+        <h2 id="subtitle">meditation timer</h2>
+    </header>
 
+    <div class="marc">
+        <p id="minutes"></p>
+        <p id="dots"> : </p>
+        <p id="seconds"></p>
+    </div>
+   
+    <footer class="buttonsZone">
         <div class="timerControl">
             <button class="timerButtons" onclick="addTime(1)">+</button>
             <button class="timerButtons" onclick="addTime(10)">++</button>
             <button class="timerButtons" onclick="substractTime()">-</button>
         </div>
-
-        <div class="buttonsZone">
+        <div >
             <button class="buttons" onclick="startTimer()">Start</button>
             <button class="buttons" onclick="pauseTimer()">Pause</button>
             <button class="buttons" onclick="stopTimer()">Stop</button>
+            <button class="buttons"  onclick="screenMode()">Full Screen</button>
         </div>
-            
-        <!-- <div class="fullButton">
-            <button class="screenButton" onclick="screenMode()">Full <br> Screen</button>
-        </div> -->
+    </footer>
+   
         <script src="main.js"></script>
-    </body>
-    </html>
+</body>
+</html>
