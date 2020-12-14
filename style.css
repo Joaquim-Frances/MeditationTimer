@@ -12,10 +12,13 @@ body{
 
 section{
     height: 100vh;
-  background-image: url('src/new_background.jpg');
-  background-size: cover;
-  
+    background-image: url('src/new_background.jpg');
+    background-size: cover;
+    background-position: 0vh;
 }
+    
+    
+    
 
     
 .header{
@@ -32,6 +35,8 @@ section{
     color: rgb(182, 145, 130);
     font-size: 50px;
     letter-spacing: 35px;
+    
+    
     
 }
 #subtitle{
