@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
-
-    <video  autoplay muted loop id="videoBG">
-    <source src="src/Smoke01.mp4" type="video/mp4">
-    </video>
-
-    <header class="header">
+<section>
+    <div class="header">
         <h1 id="title">SILENCE</h1>
         <h2 id="subtitle">meditation timer</h2>
-    </header>
-
-    <div class="marc">
-        <p id="minutes"></p>
-        <p id="dots"> : </p>
-        <p id="seconds"></p>
     </div>
-   
-    <footer class="buttonsZone">
+
+    <div class="container">
+        
+            <p id="minutes"></p>
+            <p id="dots"> : </p>
+            <p id="seconds"></p>
+        
+    </div>
+
+    <div class="buttonsZone">
         <div class="timerControl">
-            <button class="timerButtons" onclick="addTime(1)">+</button>
-            <button class="timerButtons" onclick="addTime(10)">++</button>
-            <button class="timerButtons" onclick="substractTime()">-</button>
+            <button class="buttons" onclick="addTime(1)">+</button>
+            <button class="buttons" onclick="addTime(10)">++</button>
+            <button class="buttons" onclick="substractTime()">-</button>
         </div>
         <div >
             <button class="buttons" onclick="startTimer()">Start</button>
             <button class="buttons" onclick="pauseTimer()">Pause</button>
             <button class="buttons" onclick="stopTimer()">Stop</button>
-            <button class="buttons"  onclick="screenMode()">Full Screen</button>
         </div>
-    </footer>
+    <div class="fs">
+        <button class="buttons" id="FS" onclick="screenMode()">Full Screen</button>
+    </div>
+    </div>
+</section> 
+   
    
         <script src="main.js"></script>
 </body>
