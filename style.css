@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -26,7 +28,13 @@ section{
     transform: translate(-50%, -50%);
     background-color: black;
     z-index: -1;
-}   
+} 
+
+@media (max-width: 800px) {
+    .video{
+        display: none;
+    }
+}  
     
 
     
