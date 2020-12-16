@@ -34,6 +34,14 @@ section{
     .video{
         display: none;
     }
+    
+    .fs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 99vw;
+        
+    }
 }  
     
 
