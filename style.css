@@ -22,7 +22,7 @@ section{
     min-height: 100%;
     min-width: 100%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     background-color: black;
     z-index: -1;
@@ -43,7 +43,7 @@ section{
 #title{
     font-family: Montserrat;
     color: rgb(182, 145, 130);
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 25px;
     
     
@@ -51,7 +51,7 @@ section{
 }
 #subtitle{
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: lighter;
     color: grey;
     padding-top: 10px;
@@ -70,7 +70,7 @@ section{
 #minutes, #dots, #seconds{
     font-family: Montserrat;
     color: rgb(182, 145, 130);
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 15px;
 
 }
@@ -88,7 +88,7 @@ section{
 }
 .buttons{
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bolder;
     background-color: transparent;
     border: 1px solid #202020;
