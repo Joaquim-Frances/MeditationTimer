@@ -12,12 +12,22 @@ body{
 
 section{
     height: 100vh;
-    background-image: url('src/new_background_02.jpg');
-    background-size: cover;
-    background-position: 0vh;
+    /* background-image: url('src/new_background_02.jpg');
+    
+    background-position: 0vh; */
+    position: relative;
+    
 }
     
-    
+.video{
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}   
     
 
     
@@ -29,18 +39,20 @@ section{
     height: 33vh;
     width: 100%;
     
+    
 }
 #title{
     font-family: Montserrat;
     color: rgb(182, 145, 130);
-    font-size: 50px;
-    letter-spacing: 35px;
+    font-size: 30px;
+    letter-spacing: 25px;
     
     
     
 }
 #subtitle{
     font-family: sans-serif;
+    font-size: 15px;
     font-weight: lighter;
     color: grey;
     padding-top: 10px;
@@ -59,7 +71,7 @@ section{
 #minutes, #dots, #seconds{
     font-family: Montserrat;
     color: rgb(182, 145, 130);
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 15px;
 
 }
@@ -80,9 +92,11 @@ section{
     font-size: 15px;
     font-weight: bolder;
     background-color: transparent;
-    border: none;
-    color: rgb(182, 145, 130);
-    padding: 9px 25px;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    color:grey;
+    padding: 10px 30px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
