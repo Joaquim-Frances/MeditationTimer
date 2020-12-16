@@ -8,13 +8,11 @@
 }
 body{
     overflow: hidden;
+    background-color: black;
 }
 
 section{
     height: 100vh;
-    /* background-image: url('src/new_background_02.jpg');
-    
-    background-position: 0vh; */
     position: relative;
     
 }
@@ -26,6 +24,7 @@ section{
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    background-color: black;
     z-index: -1;
 }   
     
