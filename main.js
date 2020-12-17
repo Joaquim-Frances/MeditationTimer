@@ -45,10 +45,10 @@ function timeCount(){
     
     if(minutes <= 0 && seconds <= 0){
         stopTimer();
-        playSound();
+        playSound();  
     }
-
 }
+
     
 
 
@@ -65,6 +65,7 @@ function startTimer(){
     myTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
+    acquireLock();
 }
 
 
@@ -85,6 +86,7 @@ function stopTimer(){
     document.getElementById("seconds").innerHTML= "0" + seconds;
     document.getElementById("minutes").innerHTML= "0" + minutes;
     isRunning = false;
+    releaseLock();
     
 }
 
@@ -148,11 +150,25 @@ function screenMode(){
 
         if (document.exitFullscreen) {
             document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) { /* Safari */
+        } else if (document.webkitExitFullscreen) { 
             document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { /* IE11 */
+        } else if (document.msExitFullscreen) { 
             document.msExitFullscreen();
         }
     }
-
 }
+
+
+async function acquireLock() {
+    wakeLock = await navigator.wakeLock.request("screen");
+    alert(" Wake Lock is acquired");
+}
+
+function releaseLock() {
+    wakeLock.release().then(() => {
+        alert("Wake Lock Released");
+    });
+}
+        
+
+    
