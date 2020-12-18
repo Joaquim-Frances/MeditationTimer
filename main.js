@@ -66,6 +66,7 @@ function startTimer(){
     isRunning = true;
     inPause = false;
     acquireLock();
+    testingDevice();
 }
 
 
@@ -161,14 +162,24 @@ function screenMode(){
 
 async function acquireLock() {
     wakeLock = await navigator.wakeLock.request("screen");
-    alert(" Wake Lock is acquired");
+    console.log(" Wake Lock is acquired");
 }
 
 function releaseLock() {
     wakeLock.release().then(() => {
-        alert("Wake Lock Released");
+        console.log("Wake Lock Released");
     });
+
 }
-        
+
+function testingDevice(){
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+          console.log("You are using Mobile");
+    } else {
+        console.log("You are using Desktop");
+    }
+}
 
     
