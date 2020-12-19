@@ -40,7 +40,7 @@ function releaseLock() {
 function testingDevice(){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-        document.getElementById('device').innerHTML = "You're using a Movile Phone or Tablet";
+        document.getElementById('device').innerHTML = "You're using a Movile Phone or Tablet" + ;
     } else {
         document.getElementById('device').innerHTML = "You're using a Desktop Computer";
     }
