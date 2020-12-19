@@ -40,9 +40,28 @@ function releaseLock() {
 function testingDevice(){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-        document.getElementById('device').innerHTML = "You're using a Movile Phone or Tablet";
+        writeMesage();
+
     } else {
-        document.getElementById('device').innerHTML = "You're using a Desktop Computer";
+        writeMesage();    
     }
 } 
+
+function writeMesage(){
+    var inDiv = document.createElement("div");
+    inDiv.setAttribute ("id", "innerDiv");
+    var pTag = document.createElement("P");
+    var mesage = document.createTextNode("If you lock your device manually, the countdown will stop.");  
+    var Check = document.createElement('input');
+    Check.type = 'checkbox';
+    var btn = document.createElement("BUTTON");
+    btn.innerHTML = "UNDERSTOOD!"; 
+    btn.setAttribute("class", "buttons");
+    inDiv.appendChild(pTag);                
+    inDiv.appendChild(Check);                
+    inDiv.appendChild(btn);                
+    pTag.appendChild(mesage);                                          
+    document.getElementById("mesage").appendChild(inDiv);
     
+    
+}

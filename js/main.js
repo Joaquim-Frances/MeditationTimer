@@ -6,6 +6,7 @@ let isRunning = false;
 let inPause = false;
 let fullScreen = false;
 testingDevice();
+
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
