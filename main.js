@@ -45,10 +45,10 @@ function timeCount(){
     
     if(minutes <= 0 && seconds <= 0){
         stopTimer();
-        playSound();
+        playSound();  
     }
-
 }
+
     
 
 
@@ -65,6 +65,8 @@ function startTimer(){
     myTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
+    acquireLock();
+    testingDevice();
 }
 
 
@@ -85,6 +87,7 @@ function stopTimer(){
     document.getElementById("seconds").innerHTML= "0" + seconds;
     document.getElementById("minutes").innerHTML= "0" + minutes;
     isRunning = false;
+    releaseLock();
     
 }
 
@@ -148,11 +151,35 @@ function screenMode(){
 
         if (document.exitFullscreen) {
             document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) { /* Safari */
+        } else if (document.webkitExitFullscreen) { 
             document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { /* IE11 */
+        } else if (document.msExitFullscreen) { 
             document.msExitFullscreen();
         }
     }
+}
+
+
+async function acquireLock() {
+    wakeLock = await navigator.wakeLock.request("screen");
+    console.log(" Wake Lock is acquired");
+}
+
+function releaseLock() {
+    wakeLock.release().then(() => {
+        console.log("Wake Lock Released");
+    });
 
 }
+
+function testingDevice(){
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+          console.log("You are using Mobile");
+    } else {
+        console.log("You are using Desktop");
+    }
+}
+
+    
