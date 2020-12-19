@@ -74,6 +74,15 @@ section{
     letter-spacing: 5px;
 }
 
+#device{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+    padding-top: 10px;
+    letter-spacing: 5px;
+}
+
 .container{
     display: flex;
     flex-direction: row;
