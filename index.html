@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SILENCE MEDITATION TIMER</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 
 <body >
 
-<section>
+<section class="principal">
 
     
     <video autoplay loop muted class="video">
@@ -50,10 +51,36 @@
         </div>
     </div>
 </section> 
-   
-   <button type="radio" ></button>
+<section id="myModal" class="modal">
+    <div id="flex" class="flex">
+        <div class="contenido-modal">
+            <div class="modal-header">
+                <h2>WARNING!</h2>
+                <span class="close" id="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p></p>The app will prevent the device to shutdown automatically.<br>
+                If you lock your device manually, the countdown will stop.</p>
+            <div class="modal-buttons">
+               <input type="checkbox" name="show" id="check"><label for="check">  Don't show again</label>
+               <button class="modal-button">OK!</button>
+            </div>
+            </div>
+            <div class="modal-footer">
+                <p>Made by Joaquim Francès &copy;</p>
+            </div>
+        </div>
+    </div> 
+</section>
+
         <script src="js/screen.js"></script>
         <script src="js/sound.js"></script>
         <script src="js/main.js"></script>
 </body>
 </html>
+                
+
+    
+   
+
+   
