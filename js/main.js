@@ -46,7 +46,7 @@ function timeCount(){
 
 function playSound(){
     
-    var gong = new Audio('../src/singingbowl.mp3');
+    var gong = new Audio('./src/singingbowl.mp3');
     gong.play();
 }
 
