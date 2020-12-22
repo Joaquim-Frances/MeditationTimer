@@ -44,6 +44,11 @@ function timeCount(){
     }
 }
 
+function playSound(){
+    
+    let gong = new Audio('../src/singingbowl.mp3');
+    gong.play();
+}
 
 function startTimer(){
     if (isRunning && inPause == false){
