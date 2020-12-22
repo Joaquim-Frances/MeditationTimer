@@ -1,3 +1,15 @@
+function testingDevice(){
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+        testCookie();
+
+    } else {
+        modalOff();
+        
+    }
+} 
+
+
 function screenMode(){
 
     var elem = document.documentElement;
@@ -37,13 +49,4 @@ function releaseLock() {
 
 
 
-function testingDevice(){
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-        testCookie();
 
-    } else {
-        modalOff();
-        
-    }
-} 

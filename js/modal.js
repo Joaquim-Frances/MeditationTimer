@@ -1,6 +1,5 @@
 let modal = document.getElementById('myModal');
 let flex = document.getElementById('flex');
-let openModal = document.getElementById('openModal');
 let closeModal = document.getElementById('closeModal');
 let okModal = document.getElementById('okModal');
 
