@@ -13,7 +13,7 @@ let fullScreen = false;
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
-
+testingDevice();
 
 function addTime(minutesAdded){
     minutes += minutesAdded;
@@ -109,4 +109,3 @@ function printTime(){
     }
 }
 
-testingDevice();
