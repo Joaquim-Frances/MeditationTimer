@@ -26,10 +26,27 @@ function modalOff(){
 }
 
 okModal.addEventListener('click', function(){
-    if(document.getElementById('check').checked){
-        console.log("Check is marked");
+    
+        if(document.getElementById('check').checked){
+            
+            document.cookie = "silenceCheck = on; expires = Thu, 24 Dec 2020 12:00:00 UTC; path=/;";
+            if(document.cookie){
+                console.log("Cookie Writed!" + document.cookie);
+            }
+            modalOff();
+            return;
+        }
+    
+    modalOff(); 
+});
+    
+
+function testCookie(){
+    if(document.cookie == "silenceCheck=on"){
+        console.log("We have cookie from the begining!");
         modalOff();
+    }else {
+        modalOn();
     }
 
-
-});
+}

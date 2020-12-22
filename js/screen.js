@@ -40,11 +40,10 @@ function releaseLock() {
 function testingDevice(){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-        modalOn();
-        console.log(isMobile);
+        testCookie();
 
     } else {
         modalOff();
-        console.log(isMobile);  
+        
     }
 } 

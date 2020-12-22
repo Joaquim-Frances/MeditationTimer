@@ -1,5 +1,7 @@
 
 testingDevice();
+
+
 let seconds = 9;
 let minutes = 0;
 let isRunning = false;
