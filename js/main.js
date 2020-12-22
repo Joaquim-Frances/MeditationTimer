@@ -17,7 +17,6 @@ testingDevice();
 function addTime(minutesAdded){
     minutes += minutesAdded;
     printTime();
-    modalOn();
 }
     
 
