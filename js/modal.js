@@ -6,11 +6,7 @@ let okModal = document.getElementById('okModal');
 function testingDevice(){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-        if ('wakeLock' in navigator) {
-            document.getElementById('modal-warning-text').innerHTML = "The app will prevent the device to shutdown automatically during countdown. If you lock your device manually, the countdown will stop."
-          } else {
-            document.getElementById('modal-warning-text').innerHTML = "Your browser does not support Wake Lock API, during countdown your device will lock automatically, and the countdown will stop." + "<br><br>" + "Supported browsers are: Chrome, Brave, Edge, Opera."
-        }
+        document.getElementById('modal-warning-text').innerHTML = "This web app uses a technology to prevent the device go to sleep and lock if the countdown is running, but not all browser supports this.<br><br>If you lock your device manually, the countdown will stop. If you're using Firefox use the app in full screen to prevent the shutdown.<br><br> Supported browsers:<br><br> Chrome, Brave and Firefox in full screen."
         testCookie();
         } else {
             modalOff();
