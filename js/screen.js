@@ -1,13 +1,3 @@
-function testingDevice(){
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-        testCookie();
-
-    } else {
-        modalOff();
-        
-    }
-} 
 
 
 function screenMode(){
@@ -39,7 +29,7 @@ function screenMode(){
 
 async function acquireLock() {
     wakeLock = await navigator.wakeLock.request("screen");
-    console.log(" Wake Lock is acquired");
+    console.log("Wake Lock Acquired");
 }
 function releaseLock() {
     wakeLock.release().then(() => {
@@ -47,6 +37,13 @@ function releaseLock() {
     });
 }
 
-
+// if ('wakeLock' in navigator) {
+//     isSupported = true;
+//     statusElem.textContent = 'Screen Wake Lock API supported!';
+//   } else {
+//       statusElem.textContent = 'Wake lock is not supported by this browser.';
+    
+// }
+    
 
 

@@ -7,6 +7,7 @@ let minutes = 0;
 let isRunning = false;
 let inPause = false;
 let fullScreen = false;
+let lockOn = false;
 
 
 
@@ -61,7 +62,10 @@ function startTimer(){
     myTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
-    acquireLock();
+    if ('wakeLock' in navigator) {
+        acquireLock();
+        lockOn = true;
+    }
 }
 
 
@@ -79,7 +83,10 @@ function stopTimer(){
     document.getElementById("seconds").innerHTML= "0" + seconds;
     document.getElementById("minutes").innerHTML= "0" + minutes;
     isRunning = false;
-    releaseLock();
+    if(lockOn == true){
+        releaseLock();
+    }
+
 }
 
 
