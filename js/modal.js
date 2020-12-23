@@ -6,7 +6,7 @@ let okModal = document.getElementById('okModal');
 function testingDevice(){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-        document.getElementById('modal-warning-text').innerHTML = "If the device enters sleep and lock the countdown will stop. This web app uses a new feature to prevent that and keep the screen on during countdown, but not all browser supports this.<br><br>If you lock your device manually, the countdown will stop. <br><br> Supported browsers:<br><br> Chrome, Brave and Firefox in full screen."
+        document.getElementById('modal-warning-text').innerHTML = "If the device enters sleep and lock, the countdown will stop. This web app uses a new feature to prevent that and keep the screen on during countdown, but not all browser supports this.<br><br>If you lock your device manually, the countdown will stop. <br><br> Supported browsers:<br><br> Chrome, Brave and Firefox in full screen."
         testCookie();
         } else {
             modalOff();
