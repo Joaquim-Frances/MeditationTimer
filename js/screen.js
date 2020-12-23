@@ -30,20 +30,15 @@ function screenMode(){
 async function acquireLock() {
     wakeLock = await navigator.wakeLock.request("screen");
     console.log("Wake Lock Acquired");
+    console.log(wakeLock);
 }
+
 function releaseLock() {
     wakeLock.release().then(() => {
         console.log("Wake Lock Released");
     });
 }
 
-// if ('wakeLock' in navigator) {
-//     isSupported = true;
-//     statusElem.textContent = 'Screen Wake Lock API supported!';
-//   } else {
-//       statusElem.textContent = 'Wake lock is not supported by this browser.';
-    
-// }
     
 
 
