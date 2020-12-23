@@ -1,14 +1,11 @@
 
-
-
-
 let seconds = 9;
 let minutes = 0;
 let isRunning = false;
 let inPause = false;
 let fullScreen = false;
 
-
+noSleep = new NoSleep();
 
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
@@ -40,8 +37,9 @@ function timeCount(){
     }
     printTime();
     if(minutes <= 0 && seconds <= 0){
-        stopTimer();
         playSound();  
+        stopTimer();
+        noSleep.disable();
     }
 }
 
@@ -61,7 +59,8 @@ function startTimer(){
     myTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
-    acquireLock();
+    noSleep.enable();
+    //acquireLock();
 }
 
 
@@ -79,7 +78,8 @@ function stopTimer(){
     document.getElementById("seconds").innerHTML= "0" + seconds;
     document.getElementById("minutes").innerHTML= "0" + minutes;
     isRunning = false;
-    releaseLock();
+    noSleep.disable();
+    //releaseLock();
 }
 
 
