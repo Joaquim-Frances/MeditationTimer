@@ -43,7 +43,15 @@ section{
     }
 }  
     
-        
+.btn-menu{
+    color: rgb(56, 49, 46);
+    font-size: x-large;
+    padding: 20px;
+   
+    
+    
+    
+}      
     
 
     
@@ -52,14 +60,14 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 33vh;
+    height: 5vh;
     width: 100%;
     
     
 }
 #title{
     font-family: Montserrat;
-    color: rgb(182, 145, 130);
+    color: rgb(212, 161, 141);
     font-size: 25px;
     letter-spacing: 25px;
 }
@@ -78,15 +86,16 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 50vh;
     width: 100%;
 }
     
 #minutes, #dots, #seconds{
     font-family: Montserrat;
-    color: rgb(182, 145, 130);
+    color: rgb(212, 161, 141);
     font-size: 25px;
     letter-spacing: 15px;
+    padding-top: 70px;
 
 }
 
@@ -99,7 +108,7 @@ section{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 30vh;
+    height: 33vh;
     width: 100%;
     
 }
