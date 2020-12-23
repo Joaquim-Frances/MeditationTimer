@@ -51,7 +51,9 @@ function modalOff(){
 
 okModal.addEventListener('click', function(){
     if(document.getElementById('check').checked){
-        document.cookie = "silenceCheck = on; expires = Thu, 24 Dec 2020 12:00:00 UTC; path=/;";
+        var now = new Date().getTime();
+        var expireDate = now + (1000*60*60*24*60);
+        document.cookie = "silenceCheck = on; expires = " + expireDate.toUTCString(); + "path=/;";
         modalOff();
         return;
     }

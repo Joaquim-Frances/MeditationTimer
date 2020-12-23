@@ -10,7 +10,6 @@ let fullScreen = false;
 let lockOn = false;
 
 
-
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
