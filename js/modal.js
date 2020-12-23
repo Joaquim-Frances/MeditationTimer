@@ -47,9 +47,9 @@ function modalOff(){
 
 okModal.addEventListener('click', function(){
     if(document.getElementById('check').checked){
-        var now = new Date().getTime();
-        var expireDate = now + (1000*60*60*24*60);
-        document.cookie = "silenceCheck = on; expires = " + expireDate.toUTCString(); + "path=/;";
+        var now = new Date();
+        now.setTime(now.getTime() + (60*24*60*60*1000))
+        document.cookie = "silenceCheck = on; expires = " + now.toUTCString(); + "path=/;";
         modalOff();
         return;
     }
