@@ -27,7 +27,7 @@ label{
 .menu{
     
     position: absolute;
-    top: 0;
+    top: -5px;
     left: -2px;
     color: white;
     width: 0px;
@@ -79,7 +79,7 @@ label{
 #made{
     position: absolute;
     width: 300px;
-    bottom: 30px;
+    bottom: 15px;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     height: 30px;
