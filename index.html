@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
-    <link rel="stylesheet" href="./css/fontello-codes.css">
-    <link rel="stylesheet" href="./css/fontello-embedded.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/fontello.css">
 </head>
 
 <body >
@@ -20,9 +20,21 @@
     <video autoplay loop muted class="video">
         <source src="src/IncenseWithFireLoop.mp4" type="video/mp4">
     </video>
-    <div class="btn-menu">
-        <label for="" class="icon-menu"></label>
-    </div>
+
+    <input type="checkbox" name="" id="check">
+    <label for="check" class="icon-menu" id="icon-id"></label>
+    <nav class="menu">
+        <span class="closeMenu" id="closeMenu">&times;</span>
+        <div class="free-space"></div>
+        <ul>
+            <li>Intervals</li>
+            <li>How to meditate...</li>
+            <li>Donate</li>
+        </ul>
+        <p id="made">Made with &hearts; by Joaquim Francès</p>
+    </nav>
+
+    
 
     <div class="header">
         <h1 id="title">SILENCE</h1>
@@ -81,9 +93,12 @@
     </div> 
 </section>
 
+
 <script src="js/screen.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+
         
 </body>
 </html>

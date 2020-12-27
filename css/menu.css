@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+label{
+    position: sticky;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+}
+
+.free-space{
+    height: 70px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+#check:checked  ~ .menu{
+   width: 300px;
+}
+
+
+.menu{
+    
+    position: absolute;
+    top: 0;
+    left: -2px;
+    color: white;
+    width: 0px;
+    height: 105vh;
+    background-color: rgb(34, 32, 32);
+    overflow: hidden;
+    transition: all 300ms cubic-bezier(0.5, 0, 0, 1);
+    border-radius: 0  7px 7px 0;
+    border: 1px solid rgb(77, 73, 73);
+    z-index: 0;
+    
+}
+    
+    
+
+
+.closeMenu{
+    position: absolute;
+    width: 375px;
+    text-align: right;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+
+.closeMenu:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.menu li{
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 300ms;
+    color: rgb(212, 161, 141);
+    font-family: Montserrat;
+    padding: 35px;
+    display: block;
+    width: 400px;
+    
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}    
+
+#made{
+    position: absolute;
+    width: 300px;
+    bottom: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    padding-bottom: 40px;
+    padding-top: 25px;
+    font-family: Montserrat;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+    
+    
