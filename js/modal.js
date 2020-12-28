@@ -46,7 +46,7 @@ function modalOff(){
 }
 
 okModal.addEventListener('click', function(){
-    if(document.getElementById('check').checked){
+    if(document.getElementById('Modalcheck').checked){
         var now = new Date();
         now.setTime(now.getTime() + (60*24*60*60*1000))
         document.cookie = "silenceCheck = on; expires = " + now.toUTCString(); + "path=/;";
