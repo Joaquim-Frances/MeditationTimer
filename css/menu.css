@@ -14,8 +14,8 @@ label{
     label{
         position: sticky;
         z-index: 1;
-        top: 3%;
-        left: 45%;
+        top: 5%;
+        left: 8%;
     }
 
 }
@@ -87,7 +87,7 @@ label{
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     height: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     padding-top: 25px;
     font-family: Montserrat;
     font-size: 12px;

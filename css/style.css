@@ -31,17 +31,7 @@ section{
     z-index: -1;
 } 
 
-@media (max-width: 800px) {
-    .video{
-        display: none;
-    }
-    .fs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 99vw;
-    }
-}  
+
 
 
 .header{
@@ -125,3 +115,25 @@ section{
     width: 99vw;
     
 }
+
+@media (max-width: 800px) {
+    .video{
+        display: none;
+    }
+
+    .header{
+        height: 25vh;
+        
+    }
+
+    .container{
+        height: 30vh;
+    }
+
+    .fs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 99vw;
+    }
+}  
