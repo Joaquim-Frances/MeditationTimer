@@ -117,21 +117,26 @@ section{
 }
 
 .warmup-container{
-    display: flex;
+    position: absolute;
+    display: none;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    top: 30%;
     height: 5vh;
     width: 100%;
 }
 
-#warmup-title, warmup-minutes, #warmup-dots, #warmup-seconds {
+#warmup-title, #warmup-minutes, #warmup-dots, #warmup-seconds {
     font-family: Montserrat;
     color: rgb(212, 161, 141);
     font-size: 15px;
     padding-top: 70px;
-
 }
+#warmup-minutes, #warmup-dots, #warmup-seconds {
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
 
 @media (max-width: 800px) {
     .video{

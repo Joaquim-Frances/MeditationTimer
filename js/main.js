@@ -58,7 +58,11 @@ function startTimer(){
     if(minutes == 0 && seconds == 0){
         return;
     }
-    myTime = setInterval(timeCount, 1000);
+    if(wuMinutes != 0 || wuSeconds != 0){
+        startWu();
+        return;
+    }
+    silenceTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
     if ('wakeLock' in navigator) {
@@ -69,6 +73,7 @@ function startTimer(){
 
 
 function stopTimer(){
+    stopWU();
     if(isRunning == false){
         seconds = 0;
         minutes = 0;
@@ -85,8 +90,8 @@ function stopTimer(){
     if(lockOn == true){
         releaseLock();
     }
-
 }
+
 
 
     
@@ -94,7 +99,7 @@ function stopTimer(){
 function pauseTimer(){
 
     if(isRunning && inPause == false){
-        clearInterval(myTime);
+        clearInterval(silenceTime);
         inPause = true;
     }
 }

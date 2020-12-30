@@ -5,6 +5,7 @@ let closeModalInterval = document.getElementById('closeModalInterval');
 let okIntervalModal = document.getElementById('okIntervalModal');
 
 
+
 intervals.addEventListener('click', function(){
     intervalModal.style.display = 'block';
 });
@@ -25,9 +26,10 @@ window.addEventListener('click', function(e){
 
 
 okIntervalModal.addEventListener('click', function(){
+    
+    wuMinutes = document.getElementById('warmup').value;
+    console.log(wuMinutes);
     intervalModal.style.display = 'none';
-    let warmUp = document.getElementById('warmup').value;
-    console.log(warmUp);
 })
 
 
