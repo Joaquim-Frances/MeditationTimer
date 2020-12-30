@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/intervals.css">
 </head>
 
 <body >
@@ -27,7 +28,7 @@
         <span class="closeMenu" id="closeMenu">&times;</span>
         <div class="free-space"></div>
         <ul>
-            <li>Intervals</li>
+            <li id="intervals">Interval bells</li>
             <li>How to meditate...</li>
             <li>Donate</li>
         </ul>
@@ -71,6 +72,7 @@
         </div>
     </div>
 </section> 
+<!-- MODAL WINDOWS FOR MOVILE WARNING -->
 <section id="myModal" class="modal">
     <div id="flex" class="flex">
         <div class="contenido-modal">
@@ -92,12 +94,27 @@
         </div>
     </div> 
 </section>
-
+<!-- MODAL WINDOWS FOR ADDING INTERVAL BELLS -->
+<section id="intervalModal" class="interval-modal">
+    <div id="interval-flex" class="interval-flex">
+        <div class="contenido-modal-intervals">
+            <div class="interval-modal-header">
+                <h2>ADDING INTERVAL BELLS</h2>
+                <span class="close" id="closeModalInterval">&times;</span>
+            </div>
+            <div class="interva-modal-body">
+                <p id="modal-warning-text">Warm-Up</p>
+            <div class="interva-modal-buttons">
+               <button class="interval-modal-button" id="okIntervalModal">OK!</button>
+            </div>
+        </div>
+    </div> 
+</section>
 
 <script src="js/screen.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/main.js"></script>
-<script src="js/menu.js"></script>
+<script src="js/intervals.js"></script>
 
         
 </body>

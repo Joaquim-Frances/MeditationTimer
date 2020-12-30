@@ -37,7 +37,7 @@ label{
     position: absolute;
     top: -5px;
     left: -2px;
-    color: white;
+    /* color: white; */
     width: 0px;
     height: 105vh;
     background-color: rgb(34, 32, 32);
@@ -92,6 +92,17 @@ label{
     font-family: Montserrat;
     font-size: 12px;
     letter-spacing: 1px;
+}
+
+#menuBtn{
+    font-size: 25px;
+    background-color: transparent;
+    font-family: helvetica;
+    font-weight: 50;
+    outline: none;
+    border: none;
+    color: white;
+    letter-spacing: 50px;
 }
     
     
