@@ -26,4 +26,8 @@ window.addEventListener('click', function(e){
 
 okIntervalModal.addEventListener('click', function(){
     intervalModal.style.display = 'none';
+    let warmUp = document.getElementById('warmup').value;
+    console.log(warmUp);
 })
+
+

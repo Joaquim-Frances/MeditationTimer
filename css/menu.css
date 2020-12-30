@@ -37,7 +37,7 @@ label{
     position: absolute;
     top: -5px;
     left: -2px;
-    /* color: white; */
+    color: white;
     width: 0px;
     height: 105vh;
     background-color: rgb(34, 32, 32);
@@ -83,7 +83,7 @@ label{
 #made{
     position: absolute;
     width: 300px;
-    bottom: 15px;
+    bottom: 25px;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     height: 30px;
@@ -94,15 +94,6 @@ label{
     letter-spacing: 1px;
 }
 
-#menuBtn{
-    font-size: 25px;
-    background-color: transparent;
-    font-family: helvetica;
-    font-weight: 50;
-    outline: none;
-    border: none;
-    color: white;
-    letter-spacing: 50px;
-}
+
     
     

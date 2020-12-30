@@ -22,6 +22,8 @@
         <source src="src/IncenseWithFireLoop.mp4" type="video/mp4">
     </video>
 
+<!-- SIDE BAR MENU -->
+
     <input type="checkbox" name="" id="check">
     <label for="check" class="icon-menu" id="icon-id"></label>
     <nav class="menu">
@@ -35,18 +37,20 @@
         <p id="made">Made with &hearts; by Joaquim Francès</p>
     </nav>
 
+<!-- MAIN COUNTER -->
     
-
     <div class="header">
         <h1 id="title">SILENCE</h1>
         <h2 id="subtitle">meditation timer</h2>
-        
-        
+    </div>   
        
+    <div class="warmup-container">
+            <p id="warmup-title">Warm-Up Time:</p>
+            <p id="warmup-minutes"></p>
+            <p id="warmup-dots"> : </p>
+            <p id="warmup-seconds"></p>
     </div>
-    <div id="mesage">
        
-    </div>
     <div class="container">
         
             <p id="minutes"></p>
@@ -103,7 +107,9 @@
                 <span class="close" id="closeModalInterval">&times;</span>
             </div>
             <div class="interva-modal-body">
-                <p id="modal-warning-text">Warm-Up</p>
+                <label for="warmup">Warm-Up Minutes:</label>
+                <input type="number" id="warmup" name="quantity" min="1" max="5">
+                
             <div class="interva-modal-buttons">
                <button class="interval-modal-button" id="okIntervalModal">OK!</button>
             </div>

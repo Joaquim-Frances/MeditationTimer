@@ -116,6 +116,23 @@ section{
     
 }
 
+.warmup-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+}
+
+#warmup-title, warmup-minutes, #warmup-dots, #warmup-seconds {
+    font-family: Montserrat;
+    color: rgb(212, 161, 141);
+    font-size: 15px;
+    padding-top: 70px;
+
+}
+
 @media (max-width: 800px) {
     .video{
         display: none;
