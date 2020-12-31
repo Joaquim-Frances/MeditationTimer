@@ -81,7 +81,7 @@ function stopTimer(){
         document.getElementById("minutes").innerHTML= "0" + minutes;
         return;   
     }
-    clearInterval(myTime);
+    clearInterval(silenceTime);
     seconds = 0;
     minutes = 0;
     document.getElementById("seconds").innerHTML= "0" + seconds;
@@ -97,7 +97,7 @@ function stopTimer(){
     
 
 function pauseTimer(){
-
+    pauseWuTimer();
     if(isRunning && inPause == false){
         clearInterval(silenceTime);
         inPause = true;

@@ -1,10 +1,24 @@
 let wuContainer = document.getElementById('warmup-container');
+let wuUserMinutes = 0;
 let wuMinutes = 0;
 let wuSeconds = 0;
+isRunningWu = false;
+inPauseWu = false;
 
-if(wuSeconds != 0 || wuMinutes != 0){
-    wuContainer.style.display = 'flex';
+
+    
+
+
+function showWarmUp(){
+    if(wuSeconds != 0 || wuMinutes != 0){
+        wuContainer.style.display = 'flex';
+    }else{
+        wuContainer.style.display = 'none';
+    }
 }
+
+console.log(wuMinutes);
+
 
 document.getElementById('warmup-minutes').innerHTML = wuMinutes;
 document.getElementById('warmup-seconds').innerHTML = wuSeconds;
@@ -25,8 +39,8 @@ function wuCountDown(){
 
 function startWu(){
     wuTime = setInterval(wuCountDown, 1000);
-    isRunning = true;
-    inPause = false;
+    isRunningWu = true;
+    inPauseWu = false;
 }
 
 function printWuTime(){
@@ -37,25 +51,33 @@ function printWuTime(){
         document.getElementById("warmup-seconds").innerHTML= wuSeconds; 
     }
 
-    if(wuMminutes >= 0 && wuMminutes < 10){
-        document.getElementById("warmup-minutes").innerHTML= "0" + wuMminutes;
-    }else if(minutes >= 10){
-        document.getElementById("warmup-minutes").innerHTML= wuMminutes; 
+    if(wuMinutes >= 0 && wuMinutes < 10){
+        document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
+    }else if(wuMinutes >= 10){
+        document.getElementById("warmup-minutes").innerHTML= wuMinutes; 
     }
 }
 
 function stopWU(){
-    if(isRunning == false){
+    if(isRunningWu == false){
         wuSeconds = 0;
-        wuMinutes = 0;
-        document.getElementById("warmup-seconds").innerHTML= "0" + seconds;
-        document.getElementById("warmup-minutes").innerHTML= "0" + minutes;
+        wuMinutes = wuUserMinutes;
+        document.getElementById("warmup-seconds").innerHTML= "0" + wuSeconds;
+        document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
         return;   
     }
     clearInterval(wuTime);
     wuSeconds = 0;
-    wuMinutes = 0;
-    document.getElementById("seconds").innerHTML= "0" + seconds;
-    document.getElementById("minutes").innerHTML= "0" + minutes;
+    wuMinutes = wuUserMinutes;
+    document.getElementById("warmup-seconds").innerHTML= "0" + wuSeconds;
+    document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
     isRunning = false;
+}
+
+function pauseWuTimer(){
+
+    if(isRunningWu && inPauseWu == false){
+        clearInterval(wuTime);
+        inPause = true;
+    }
 }
