@@ -2,8 +2,9 @@ let wuContainer = document.getElementById('warmup-container');
 let wuUserMinutes = 0;
 let wuMinutes = 0;
 let wuSeconds = 0;
-isRunningWu = false;
-inPauseWu = false;
+let isRunningWu = false;
+let inPauseWu = false;
+let finishWu = false;
 
 
     
@@ -17,7 +18,6 @@ function showWarmUp(){
     }
 }
 
-console.log(wuMinutes);
 
 
 document.getElementById('warmup-minutes').innerHTML = wuMinutes;
@@ -71,7 +71,7 @@ function stopWU(){
     wuMinutes = wuUserMinutes;
     document.getElementById("warmup-seconds").innerHTML= "0" + wuSeconds;
     document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
-    isRunning = false;
+    isRunningWu = false;
 }
 
 function pauseWuTimer(){

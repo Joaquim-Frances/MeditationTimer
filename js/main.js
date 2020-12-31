@@ -55,11 +55,11 @@ function startTimer(){
     if (isRunning && inPause == false){
        return;
     }
-    if(minutes == 0 && seconds == 0){
+    if(wuMinutes != 0 || wuSeconds != 0 && isRunningWu == false){
+        startWu();
         return;
     }
-    if(wuMinutes != 0 || wuSeconds != 0){
-        startWu();
+    if(minutes == 0 && seconds == 0){
         return;
     }
     silenceTime = setInterval(timeCount, 1000);
