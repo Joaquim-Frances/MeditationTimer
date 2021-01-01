@@ -124,6 +124,7 @@ section{
     top: 30%;
     height: 5vh;
     width: 100%;
+    z-index: -1;
 }
 
 #warmup-title, #warmup-minutes, #warmup-dots, #warmup-seconds {
