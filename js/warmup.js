@@ -4,7 +4,7 @@ let wuMinutes = 0;
 let wuSeconds = 0;
 let isRunningWu = false;
 let inPauseWu = false;
-let finishWu = false;
+
 
 
     
@@ -13,6 +13,7 @@ let finishWu = false;
 function showWarmUp(){
     if(wuSeconds != 0 || wuMinutes != 0){
         wuContainer.style.display = 'flex';
+        emptyWu =  false;
     }else{
         wuContainer.style.display = 'none';
     }
@@ -31,9 +32,10 @@ function wuCountDown(){
     }
     printWuTime();
     if(wuMinutes <= 0 && wuSeconds <= 0){
+        emptyWu = true;
         stopWU();
-        startTimer();
         playSound();  //corregir sound little
+        startTimer();
     }
 }
 
@@ -42,6 +44,7 @@ function startWu(){
     isRunningWu = true;
     inPauseWu = false;
 }
+    
 
 function printWuTime(){
 
@@ -66,13 +69,25 @@ function stopWU(){
         document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
         return;   
     }
+    if(emptyWu == true && isRunningWu == true){
+        clearInterval(wuTime);
+        wuSeconds = 0;
+        wuMinutes = 0;
+        document.getElementById("warmup-seconds").innerHTML= "0" + wuSeconds;
+        document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
+        isRunningWu = false;  
+        return;
+    }
     clearInterval(wuTime);
     wuSeconds = 0;
     wuMinutes = wuUserMinutes;
     document.getElementById("warmup-seconds").innerHTML= "0" + wuSeconds;
     document.getElementById("warmup-minutes").innerHTML= "0" + wuMinutes;
+    emptyWu = false;
     isRunningWu = false;
 }
+
+
 
 function pauseWuTimer(){
 

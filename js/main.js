@@ -1,7 +1,7 @@
 
 
 
-
+let emptyWu = false;
 let seconds = 9;
 let minutes = 0;
 let isRunning = false;
@@ -52,10 +52,14 @@ function playSound(){
 }
 
 function startTimer(){
+    if ('wakeLock' in navigator) {
+        acquireLock();
+        lockOn = true;
+    }
     if (isRunning && inPause == false){
        return;
     }
-    if(wuMinutes != 0 || wuSeconds != 0 && isRunningWu == false){
+    if(emptyWu == false){
         startWu();
         return;
     }
@@ -65,20 +69,18 @@ function startTimer(){
     silenceTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
-    if ('wakeLock' in navigator) {
-        acquireLock();
-        lockOn = true;
-    }
+    
 }
 
 
 function stopTimer(){
-    stopWU();
+    
     if(isRunning == false){
         seconds = 0;
         minutes = 0;
         document.getElementById("seconds").innerHTML= "0" + seconds;
         document.getElementById("minutes").innerHTML= "0" + minutes;
+        stopWU();
         return;   
     }
     clearInterval(silenceTime);
