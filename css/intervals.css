@@ -68,20 +68,29 @@
 }
 
 .interval-modal-body{
-    padding-top: 20px;
-    padding-bottom: 20px;
+   
     text-align: center;
-    padding: 15px;
+    
+}
+
+.warmup-modal-body{
+    padding: 25px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    
+}
+
+#selectWuTime, #warmup-time{
+    margin-right: 35px;
 }
 
 
-    
-
-
-.interval-modal-buttons{
-    padding: 20px;
+.interval-modal-buttons{ 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px;
 }
     
    
@@ -89,16 +98,14 @@
 
 .interval-modal-button{
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bolder;
-    background-color: grey;
+    background-color: transparent;
     border: 1px solid #404040;
     border-radius: 10px;
     color:white;
-    padding: 7px 10px;
-    margin: 4px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     outline: none;
 }

@@ -108,10 +108,14 @@
             </div>
             <div class="interval-modal-body">
                 <div class="warmup-modal-body">
-                    <label for="warmup">Warm-Up Minutes:</label>
-                    <input type="number" id="warmup" name="quantity" min="1" max="5">
+                    <label id="selectWuTime">Warm-Up Minutes:</label>
+                    <button class="interval-modal-button" id="selectWuTime" onclick="wuTimeCycleDown()">-</button>
+                    <div>
+                    <p id="warmup-time"></p>
+                    </div>
+                    <button class="interval-modal-button" id="selectWuTime" onclick="wuTimeCycleUp()">+</button>
                 </div>
-            <div class="interva-modal-buttons">
+            <div class="interval-modal-buttons">
                <button class="interval-modal-button" id="okIntervalModal">OK!</button>
             </div>
         </div>
