@@ -28,7 +28,7 @@
     position: relative;
     background-color: rgb(34, 32, 32);
     margin: auto;
-    width: 70%;
+    width: 60%;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
     font-family: Montserrat;
     color: rgb(212, 161, 141);
@@ -38,6 +38,8 @@
     border-radius: 15px;
     
 }
+
+
     
     
 
@@ -76,15 +78,23 @@
 .warmup-modal-body{
     padding: 25px;
     display: flex;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     
 }
 
-#selectWuTime, #warmup-time{
-    margin-right: 35px;
+#selectWuTime {
+    margin: 15px;
 }
 
+#warmup-time{
+ min-width: 150px;
+}
+
+#labelWuTime{
+    margin-right: 30px;
+}
 
 .interval-modal-buttons{ 
     display: flex;
@@ -108,4 +118,15 @@
     text-align: center;
     text-decoration: none;
     outline: none;
+}
+
+@media (max-width: 800px){
+    .contenido-modal-intervals{
+        width: 90%;
+    }
+    .warmup-modal-body{
+        flex-direction: column;
+        max-width: 80%;
+    }
+    
 }
