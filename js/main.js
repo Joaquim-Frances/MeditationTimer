@@ -89,6 +89,7 @@ function stopTimer(){
     document.getElementById("seconds").innerHTML= "0" + seconds;
     document.getElementById("minutes").innerHTML= "0" + minutes;
     isRunning = false;
+    emptyWu = false;
     if(lockOn == true){
         releaseLock();
     }
