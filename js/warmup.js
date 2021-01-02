@@ -40,7 +40,7 @@ function wuCountDown(){
 }
 
 function startWu(){
-    if(isRunningWu){
+    if(isRunningWu && inPauseWu == false){
         return;
     }
     wuTime = setInterval(wuCountDown, 1000);
