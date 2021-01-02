@@ -70,13 +70,13 @@
 }
 
 .interval-modal-body{
-   
-    text-align: center;
+    padding: 15px;
+    
     
 }
 
 .warmup-modal-body{
-    padding: 25px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,22 +85,25 @@
 }
 
 #selectWuTime {
-    margin: 15px;
+    padding: 10px 15px;
+    margin-right: 35px;
 }
 
 #warmup-time{
  min-width: 150px;
 }
 
-#labelWuTime{
-    margin-right: 30px;
+hr{
+  border: 1px solid #353535; 
+  margin-bottom: 15px; 
 }
 
 .interval-modal-buttons{ 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 15px;
+    
+    
 }
     
    
@@ -114,10 +117,12 @@
     border: 1px solid #404040;
     border-radius: 10px;
     color:white;
-    padding: 10px 15px;
+    padding:15px 10px;
     text-align: center;
     text-decoration: none;
     outline: none;
+    
+    
 }
 
 @media (max-width: 800px){
@@ -125,7 +130,7 @@
         width: 90%;
     }
     .warmup-modal-body{
-        flex-direction: column;
+        flex-direction: row;
         max-width: 80%;
     }
     
