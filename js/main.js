@@ -1,5 +1,5 @@
 let emptyWu = false;
-let seconds = 9;
+let seconds = 0;
 let minutes = 0;
 let isRunning = false;
 let inPause = false;
