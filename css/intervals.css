@@ -79,7 +79,7 @@
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
     
 }
@@ -90,7 +90,7 @@
 }
 
 #warmup-time{
- min-width: 150px;
+    min-width: 150px;
 }
 
 hr{
@@ -132,6 +132,7 @@ hr{
     .warmup-modal-body{
         flex-direction: row;
         max-width: 80%;
+        justify-content: initial;
     }
     
 }
