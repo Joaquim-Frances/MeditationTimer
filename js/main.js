@@ -1,6 +1,3 @@
-
-
-
 let emptyWu = false;
 let seconds = 9;
 let minutes = 0;
@@ -52,6 +49,7 @@ function playSound(){
 }
 
 function startTimer(){
+    
     if ('wakeLock' in navigator) {
         acquireLock();
         lockOn = true;
@@ -59,7 +57,7 @@ function startTimer(){
     if (isRunning && inPause == false){
        return;
     }
-    if(emptyWu == false){
+    if (wuMinutes > 0 || wuSeconds > 0 && emptyWu == false){
         startWu();
         return;
     }
