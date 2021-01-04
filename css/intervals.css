@@ -123,6 +123,19 @@ hr{
     
     
 }
+.interval-section{
+    display: flex;
+    
+    justify-content: flex-start;
+   
+}
+.interval-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 
 @media (max-width: 800px){
     .contenido-modal-intervals{
