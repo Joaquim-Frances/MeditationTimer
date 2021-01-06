@@ -8,6 +8,7 @@ let lockOn = false;
 
 
 
+
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
@@ -15,9 +16,11 @@ testingDevice();
 
 function addTime(minutesAdded){
     minutes += minutesAdded;
-    storedMinute = minutes;
     
+    storedMinute = minutes -1;
+    console.log(storedMinute);
     printTime();
+    
 }
     
 
@@ -28,8 +31,10 @@ function substractTime(){
         return;
     }
     minutes--;
-    
+    storedMinute = minutes -1;
+    console.log(storedMinute);
     printTime();
+   
 }
 
 
@@ -72,7 +77,7 @@ function startTimer(){
     silenceTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
-    console.log(startingMinutes);
+   
     
 }
 
@@ -98,10 +103,7 @@ function stopTimer(){
         releaseLock();
     }
 }
-
-
-
-    
+ 
 
 function pauseTimer(){
     pauseWuTimer();
