@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/fontello.css">
-    <link rel="stylesheet" href="./css/intervals.css">
+    <link rel="stylesheet" href="./css/options.css">
 </head>
 
 <body >
@@ -29,7 +29,7 @@
         <span class="closeMenu" id="closeMenu">&times;</span>
         <div class="free-space"></div>
         <ul>
-            <li id="intervals">Interval bells</li>
+            <li id="intervals">Meditation Options</li>
             <li>How to meditate...</li>
             <li>Donate</li>
         </ul>
@@ -103,7 +103,7 @@
     <div id="interval-flex" class="interval-flex">
         <div class="contenido-modal-intervals">
             <div class="interval-modal-header">
-                <h2>MEDITATION OPTIONS</h2>
+                <h3>MEDITATION OPTIONS</h3>
                 <span class="close" id="closeModalInterval">&times;</span>
             </div>
             <div class="interval-modal-body">
@@ -118,8 +118,12 @@
                     <h3>Adding Bells:</h3>
                 </div>
                 <div class="interval-options">
-                    <p>Ring a bell every X minutes</p>
-                    <p>Ring a bell at minute X after start</p>
+                    <br>
+                    <p>Ring a bell every  &nbsp;&nbsp;<input type="number" id="everyMinutes"> &nbsp; minutes.</p>
+                    <br>
+                    <p>OR</p>
+                    <br>
+                    <p>Ring a bell at  &nbsp;&nbsp;<input type="number" id="afterMinutes"> &nbsp; minutes after start.</p>
                 </div>
                 
             <div class="interval-modal-buttons">
@@ -133,7 +137,8 @@
 
 <script src="js/screen.js"></script>
 <script src="js/modal.js"></script>
-<script src="js/intervals.js"></script>
+<script src="js/addBells.js"></script>
+<script src="js/options.js"></script>
 <script src="js/warmup.js"></script>
 <script src="js/main.js"></script>
 

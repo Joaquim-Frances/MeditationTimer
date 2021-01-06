@@ -5,6 +5,7 @@ let closeModalInterval = document.getElementById('closeModalInterval');
 let okIntervalModal = document.getElementById('okIntervalModal');
 let sideMenu = document.getElementById('check');
 let wuTimeSelect = 0;
+let bellMinutes = 0;
 
 
 
@@ -138,10 +139,16 @@ function wuTimeCycleDown(){
 
 
 okIntervalModal.addEventListener('click', function(){
+    bellMinutes = document.getElementById('everyMinutes').value;
+    if(bellMinutes > 1){
+        bellMinutes -= 1;
+    }
+    console.log (bellMinutes);
     intervalModal.style.display = 'none';
     sideMenu.checked = false;
     showWarmUp();
     printWuTime();
 })
-    
+
+
 

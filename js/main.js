@@ -7,6 +7,7 @@ let fullScreen = false;
 let lockOn = false;
 
 
+
 document.getElementById("seconds").innerHTML=  "0" + seconds;
 document.getElementById("minutes").innerHTML=  "0" + minutes;
 
@@ -14,6 +15,8 @@ testingDevice();
 
 function addTime(minutesAdded){
     minutes += minutesAdded;
+    storedMinute = minutes;
+    
     printTime();
 }
     
@@ -25,6 +28,7 @@ function substractTime(){
         return;
     }
     minutes--;
+    
     printTime();
 }
 
@@ -34,6 +38,7 @@ function timeCount(){
     if(seconds == 0-1){
         minutes--;
         seconds = 59;
+        playIntervalBell(bellMinutes);
     }
     printTime();
     if(minutes <= 0 && seconds <= 0){
@@ -67,6 +72,7 @@ function startTimer(){
     silenceTime = setInterval(timeCount, 1000);
     isRunning = true;
     inPause = false;
+    console.log(startingMinutes);
     
 }
 

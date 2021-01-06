@@ -106,9 +106,6 @@ hr{
     
 }
     
-   
-
-
 .interval-modal-button{
     font-family: sans-serif;
     font-size: 15px;
@@ -137,6 +134,11 @@ hr{
     align-items: center;
 
 }
+
+#everyMinutes, #afterMinutes{
+    width: 50px;
+}
+    
 
 @media (max-width: 800px){
     .contenido-modal-intervals{
