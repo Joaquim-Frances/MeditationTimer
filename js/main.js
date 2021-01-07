@@ -6,6 +6,7 @@ let inPause = false;
 let fullScreen = false;
 let lockOn = false;
 let bells_mesage = document.getElementById('bells_mesage');
+let strtingMinutes = 0;
 
 
 
@@ -15,9 +16,8 @@ testingDevice();
 
 function addTime(minutesAdded){
     minutes += minutesAdded;
-    
     storedMinute = minutes -1;
-    console.log(storedMinute);
+    startingMinutes = minutes -1;
     printTime();
     
 }
@@ -31,7 +31,7 @@ function substractTime(){
     }
     minutes--;
     storedMinute = minutes -1;
-    console.log(storedMinute);
+    startingMinutes = minutes -1;
     printTime();
    
 }
@@ -43,6 +43,7 @@ function timeCount(){
         minutes--;
         seconds = 59;
         playIntervalBell(bellMinutes);
+        intervalBellsList();
     }
     printTime();
     if(minutes <= 0 && seconds <= 0){
@@ -52,7 +53,6 @@ function timeCount(){
 }
 
 function playSound(){
-    
     var gong = new Audio('./src/singingbowl.mp3');
     gong.play();
 }

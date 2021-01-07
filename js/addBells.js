@@ -1,6 +1,6 @@
 let storedMinute;
 let interval_container = document.getElementById('interval_container');
-
+let valuesList = [];
 
 function playIntervalBell(bellMinute){
     if(bellMinute == 0){
@@ -22,10 +22,17 @@ function resetIntervals(){
 
 function intervalsList(){
     let intervalElements = document.getElementsByClassName('afterMinutes');
-    let valuesList = [];
-    for(var i=0; i<intervalElements.length; i++){
-        
+    
+    for(var i=0; i<intervalElements.length; i++){ 
         valuesList.push(intervalElements[i].value);
     }    
     console.log(valuesList);
+}
+
+function intervalBellsList(){
+    for(var i=0; i<valuesList.length; i++){
+        if(minutes == startingMinutes - valuesList[i]){
+            playSound();
+        }
+    }
 }
