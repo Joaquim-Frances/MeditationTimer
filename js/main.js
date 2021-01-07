@@ -5,13 +5,12 @@ let isRunning = false;
 let inPause = false;
 let fullScreen = false;
 let lockOn = false;
+let bells_mesage = document.getElementById('bells_mesage');
 
 
 
 
-document.getElementById("seconds").innerHTML=  "0" + seconds;
-document.getElementById("minutes").innerHTML=  "0" + minutes;
-
+printTime();
 testingDevice();
 
 function addTime(minutesAdded){
@@ -126,6 +125,13 @@ function printTime(){
         document.getElementById("minutes").innerHTML= "0" + minutes;
     }else if(minutes >= 10){
         document.getElementById("minutes").innerHTML= minutes; 
+    }
+    
+    if(bellMinutes != 0){
+        bells_mesage.style.display = 'flex';
+        document.getElementById("every_bells").innerHTML = bellMinutes;
+    }else if(bellMinutes == 0){
+        bells_mesage.style.display = 'none';
     }
 }
 

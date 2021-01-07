@@ -59,6 +59,10 @@
         
     </div>
 
+    <div class="bells_mesage" id="bells_mesage">
+        <p id="mesage">A bell ring every &nbsp;</p><p id="every_bells"></p><p id="mesage">&nbsp;minutes.</p>
+    </div>
+
     <div class="buttonsZone">
         <div class="timerControl">
             <button class="buttons" onclick="addTime(1)">+1</button>
@@ -119,7 +123,7 @@
                 </div>
                 <div class="interval-options">
                     <br>
-                    <p>Ring a bell every  &nbsp;&nbsp;<input type="number" id="everyMinutes"> &nbsp; minutes.</p>
+                    <p>Ring a bell every  &nbsp;&nbsp;<input type="number" min="0" max="30" id="everyMinutes"> &nbsp; minutes.</p>
                     <br>
                     <p>OR</p>
                     <br>

@@ -9,6 +9,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     overflow: hidden;
     background-color: black;
@@ -17,7 +18,6 @@ body{
 section{
     height: 100vh;
     position: relative;
-    
 }
     
 .video{
@@ -75,11 +75,8 @@ section{
     font-size: 25px;
     letter-spacing: 15px;
     padding-top: 70px;
-
 }
 
-
-    
 
 .buttonsZone{
     
@@ -121,7 +118,7 @@ section{
     display: none;
     flex-direction: row;
     justify-content: center;
-    top: 30%;
+    top: 28%;
     height: 5vh;
     width: 100%;
     z-index: -1;
@@ -130,12 +127,33 @@ section{
 #warmup-title, #warmup-minutes, #warmup-dots, #warmup-seconds {
     font-family: Montserrat;
     color: rgb(212, 161, 141);
-    font-size: 15px;
+    font-size: 13px;
     padding-top: 70px;
 }
+
 #warmup-minutes, #warmup-dots, #warmup-seconds {
     letter-spacing: 5px;
     font-size: 15px;
+}
+
+.bells_mesage{
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15px;  
+    top: 50%;
+    height: 5vh;
+    width: 100%;
+    z-index: -1;
+}
+
+
+#mesage, #every_bells{
+    color: rgb(212, 161, 141);
+    font-family: Montserrat;
+    font-size: 12px;
 }
 
 

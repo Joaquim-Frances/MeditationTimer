@@ -140,11 +140,11 @@ function wuTimeCycleDown(){
 
 okIntervalModal.addEventListener('click', function(){
     bellMinutes = document.getElementById('everyMinutes').value;
-    console.log (bellMinutes);
     intervalModal.style.display = 'none';
     sideMenu.checked = false;
     showWarmUp();
     printWuTime();
+    printTime();
 })
 
 

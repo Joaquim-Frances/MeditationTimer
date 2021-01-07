@@ -137,6 +137,8 @@ hr{
 
 #everyMinutes, #afterMinutes{
     width: 50px;
+    background-color: #272727;
+    color: rgb(212, 161, 141);
 }
     
 
