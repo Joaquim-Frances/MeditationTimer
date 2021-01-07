@@ -174,7 +174,7 @@ hr{
     font-size: 12px;
 }
 
-#everyMinutes, #afterMinutes{
+#everyMinutes, .afterMinutes{
     width: 40px;
     background-color: #272727;
     color: rgb(212, 161, 141);

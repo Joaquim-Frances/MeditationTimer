@@ -142,6 +142,7 @@ okIntervalModal.addEventListener('click', function(){
     bellMinutes = document.getElementById('everyMinutes').value;
     intervalModal.style.display = 'none';
     sideMenu.checked = false;
+    intervalsList();
     showWarmUp();
     printWuTime();
     printTime();
