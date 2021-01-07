@@ -36,6 +36,7 @@
     animation-duration: 2s;
     border: 1px solid rgb(77, 73, 73);
     border-radius: 15px;
+    max-height: 100vh;
     
 }
 
@@ -118,23 +119,59 @@ hr{
     text-align: center;
     text-decoration: none;
     outline: none;
-    
-    
 }
+
+.add-interval-button{
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    color:white;
+    padding:10px 10px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    margin: 20px;
+}
+
+    
+    
 .interval-section{
     display: flex;
     
     justify-content: flex-start;
    
 }
+
+#interval_container::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+#interval_container::-webkit-scrollbar-track {
+    background: #272727;        /* color of the tracking area */
+}
+  
+#interval_container::-webkit-scrollbar-thumb {
+    background-color:  #404040;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #272727;  /* creates padding around scroll thumb */
+}
+
 .interval-options{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5px;
 
 }
-
+#interval_container{
+    max-height: 250px;
+    overflow:auto;
+    width: 350px;
+}
 #everyMinutes, #afterMinutes{
     width: 50px;
     background-color: #272727;
