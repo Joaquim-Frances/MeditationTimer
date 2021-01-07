@@ -165,19 +165,21 @@ hr{
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
+}
 
-}
 #interval_container{
-    max-height: 250px;
+    max-height: 20vh;
     overflow:auto;
-    width: 350px;
+    width: 250px;
+    font-size: 12px;
 }
+
 #everyMinutes, #afterMinutes{
-    width: 50px;
+    width: 40px;
     background-color: #272727;
     color: rgb(212, 161, 141);
 }
-    
+
 
 @media (max-width: 800px){
     .contenido-modal-intervals{
