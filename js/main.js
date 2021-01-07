@@ -43,7 +43,7 @@ function timeCount(){
         minutes--;
         seconds = 59;
         playIntervalBell(bellMinutes);
-        intervalBellsList();
+        playBellsList();
     }
     printTime();
     if(minutes <= 0 && seconds <= 0){
@@ -129,6 +129,7 @@ function printTime(){
     
     if(bellMinutes != 0){
         bells_mesage.style.display = 'flex';
+        document.getElementById('bells_mesage').innerHTML = '<p id="mesage">A bell ring every &nbsp;</p><p id="every_bells"></p><p id="mesage">&nbsp;minutes.</p>';
         document.getElementById("every_bells").innerHTML = bellMinutes;
     }else if(bellMinutes == 0){
         bells_mesage.style.display = 'none';

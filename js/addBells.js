@@ -18,6 +18,9 @@ function addIntervalBells(){
 
 function resetIntervals(){
     interval_container.innerHTML = "";
+    valuesList = [];
+    console.log(valuesList);
+    
 }
 
 function intervalsList(){
@@ -29,7 +32,7 @@ function intervalsList(){
     console.log(valuesList);
 }
 
-function intervalBellsList(){
+function playBellsList(){
     for(var i=0; i<valuesList.length; i++){
         if(minutes == startingMinutes - valuesList[i]){
             playSound();

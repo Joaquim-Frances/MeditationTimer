@@ -1,5 +1,6 @@
 function playSound(){
-    alert("We reach playSound");
+    console.log("Sound Played!");
     let gong = new Audio('./src/singingbowl.mp3');
     gong.play();
+   
 }
