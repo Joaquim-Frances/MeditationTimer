@@ -149,6 +149,9 @@ section{
     height: 5vh;
     width: 100%;
     z-index: -1;
+    color: rgb(212, 161, 141);
+    font-family: Montserrat;
+    font-size: 12px;
 }
 
 

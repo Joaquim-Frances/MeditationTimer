@@ -52,10 +52,10 @@ function timeCount(){
     }
 }
 
-function playSound(){
-    var gong = new Audio('./src/singingbowl.mp3');
-    gong.play();
-}
+// function playSound(){
+//     var gong = new Audio('./src/singingbowl.mp3');
+//     gong.play();
+// }
 
 function startTimer(){
     

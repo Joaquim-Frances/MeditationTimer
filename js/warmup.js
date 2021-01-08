@@ -42,6 +42,11 @@ function startWu(){
     if(isRunningWu && inPauseWu == false){
         return;
     }
+    if(minutes == 0 && seconds == 0){
+        bells_mesage.style.display = 'flex'
+        bells_mesage.innerHTML = "You must enter a main meditation time."
+        return;
+    }
     wuTime = setInterval(wuCountDown, 1000);
     isRunningWu = true;
     inPauseWu = false;
