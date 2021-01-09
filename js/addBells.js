@@ -8,7 +8,7 @@ function playIntervalBell(bellMinute){
     }
     if(minutes == storedMinute - bellMinutes && isRunning){
         storedMinute = minutes;
-        playSound();
+        playBell();
     }
 }
 
@@ -35,7 +35,7 @@ function intervalsList(){
 function playBellsList(){
     for(var i=0; i<valuesList.length; i++){
         if(minutes == startingMinutes - valuesList[i]){
-            playSound();
+            playBell();
         }
     }
 }
