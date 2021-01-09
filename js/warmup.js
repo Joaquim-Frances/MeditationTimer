@@ -33,7 +33,7 @@ function wuCountDown(){
     if(wuMinutes <= 0 && wuSeconds <= 0){
         emptyWu = true;
         stopWU();
-        playSound();  //corregir sound little
+        playSound();  
         startTimer();
     }
 }
