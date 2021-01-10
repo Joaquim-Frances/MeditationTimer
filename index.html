@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/fontello.css">
     <link rel="stylesheet" href="./css/options.css">
+    <link rel="stylesheet" href="./css/feedback.css">
 </head>
 
 <body >
@@ -31,8 +32,14 @@
         <ul>
             <li id="intervals">Meditation Options.</li>
             <li>How to meditate.</li>
-            <li>Send feedback.</li>
-            <li>Donate.</li>
+            <li id="feedback">Send feedback.</li>
+            <li>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="JR9B6S8SS5NX4" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </li>
         </ul>
         <p id="made">Made with &hearts; by Joaquim Francès</p>
     </nav>
@@ -143,12 +150,35 @@
         </div>
     </div> 
 </section>
+<!-- MODAL WINDOWS FOR SENDING FEEDBACK -->
+<section id="feedbackModal" class="feedbackModal">
+    <div id="feedbackFlex" class="feedbackFlex">
+        <div class="contenido-modal-feedback">
+            <div class="feedback-modal-header">
+                <h3>SEND FEEDBACK & COMMENTS</h3>
+                <span class="close" id="closeFeedbackModal">&times;</span>
+            </div>
+            <div class="feedback-modal-body">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <br>
+                <br>
+                <textarea rows="5" cols="60" name="text" placeholder="Enter your mesage"></textarea>
+                <hr>
+                
+            <div class="feedback-modal-buttons">
+               <button class="feedback-modal-button" id="okFeedbackModal">SEND!</button>
+            </div>
+        </div>
+    </div> 
+</section>
                     
                     
 
 <script src="js/screen.js"></script>
 <script src="js/sound.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/feedback.js"></script>
 <script src="js/addBells.js"></script>
 <script src="js/options.js"></script>
 <script src="js/warmup.js"></script>
