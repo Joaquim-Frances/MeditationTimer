@@ -134,5 +134,12 @@ function printTime(){
     }else if(bellMinutes == 0){
         bells_mesage.style.display = 'none';
     }
+
+    if(valuesList != 0){
+        bells_mesage.style.display = 'flex';
+        valuesList.forEach(element => {
+             bells_mesage.innerHTML += "<p>Ring a bell at minute " + element + " after start.</p>" + "<br>"
+        });
+    }
 }
 

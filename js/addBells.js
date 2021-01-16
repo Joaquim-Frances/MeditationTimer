@@ -13,6 +13,7 @@ function playIntervalBell(bellMinute){
 }
 
 function addIntervalBells(){
+    valuesList = [];
     interval_container.innerHTML += "<p>Ring a bell &nbsp;&nbsp;<input type='number' class='afterMinutes'> &nbsp; minutes after start.</p><br>"
     
 }
@@ -25,10 +26,13 @@ function resetIntervals(){
 }
 
 function intervalsList(){
+    bells_mesage.innerHTML = '';
+    valuesList = [];
     let intervalElements = document.getElementsByClassName('afterMinutes');
     
     for(var i=0; i<intervalElements.length; i++){ 
         valuesList.push(intervalElements[i].value);
+        
     }    
     console.log(valuesList);
 }

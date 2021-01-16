@@ -141,17 +141,18 @@ section{
 .bells_mesage{
     position: absolute;
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 15px;  
     top: 55%;
-    height: 5vh;
+    max-height: 5vh;
     width: 100%;
     z-index: -1;
     color: rgb(212, 161, 141);
     font-family: Montserrat;
     font-size: 12px;
+    
 }
 
 
