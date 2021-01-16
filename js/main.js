@@ -114,7 +114,7 @@ function pauseTimer(){
 
 
 function printTime(){
-
+    bells_mesage.innerHTML = '';
     if(seconds < 10){
         document.getElementById("seconds").innerHTML= "0" + seconds; 
     }else if(seconds >= 10 && seconds <= 59){
@@ -129,16 +129,17 @@ function printTime(){
     
     if(bellMinutes != 0){
         bells_mesage.style.display = 'flex';
-        document.getElementById('bells_mesage').innerHTML = '<p id="mesage">A bell ring every &nbsp;</p><p id="every_bells"></p><p id="mesage">&nbsp;minutes.</p>';
-        document.getElementById("every_bells").innerHTML = bellMinutes;
+        document.getElementById('bells_mesage').innerHTML += "A bell ring every " + bellMinutes + " minutes.<br>";
+        
     }else if(bellMinutes == 0){
         bells_mesage.style.display = 'none';
     }
 
     if(valuesList != 0){
         bells_mesage.style.display = 'flex';
+        
         valuesList.forEach(element => {
-             bells_mesage.innerHTML += "<p>Ring a bell at minute " + element + " after start.</p>" + "<br>"
+             bells_mesage.innerHTML += "Ring a bell at minute " + element + " after start.<br>"
         });
     }
 }
