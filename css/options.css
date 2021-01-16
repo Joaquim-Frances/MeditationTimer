@@ -77,7 +77,11 @@
 }
 
 .warmup-modal-body{
-    margin-left: 15%;   
+    margin: 20px;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
 }
 
