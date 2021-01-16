@@ -59,14 +59,15 @@ function timeCount(){
 
 function startTimer(){
     
-    if ('wakeLock' in navigator) {
-        acquireLock();
-        lockOn = true;
-    }
+    
     if (isRunning && inPause == false){
        return;
     }
     if (wuMinutes > 0 || wuSeconds > 0 && emptyWu == false){
+        if ('wakeLock' in navigator) {
+            acquireLock();
+            lockOn = true;
+        }
         startWu();
         return;
     }
@@ -74,8 +75,13 @@ function startTimer(){
         return;
     }
     silenceTime = setInterval(timeCount, 1000);
+    if ('wakeLock' in navigator) {
+        acquireLock();
+        lockOn = true;
+    }
     isRunning = true;
     inPause = false;
+
    
     
 }

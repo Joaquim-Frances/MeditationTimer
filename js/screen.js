@@ -30,7 +30,7 @@ function screenMode(){
 async function acquireLock() {
     wakeLock = await navigator.wakeLock.request("screen");
     console.log("Wake Lock Acquired");
-    console.log(wakeLock);
+    
 }
 
 function releaseLock() {
