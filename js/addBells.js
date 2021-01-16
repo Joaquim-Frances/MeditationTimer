@@ -14,6 +14,7 @@ function playIntervalBell(bellMinute){
 
 function addIntervalBells(){
     interval_container.innerHTML += "<p>Ring a bell &nbsp;&nbsp;<input type='number' class='afterMinutes'> &nbsp; minutes after start.</p><br>"
+    
 }
 
 function resetIntervals(){
