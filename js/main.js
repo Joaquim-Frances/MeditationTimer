@@ -59,7 +59,7 @@ function timeCount(){
 
 function startTimer(){
     
-    
+    console.log('Starting version 1.5')
     if (isRunning && inPause == false){
        return;
     }
