@@ -65,12 +65,12 @@ label{
 
 .menu li{
     list-style: none;
-    padding: 20px;
+    padding: 25px;
     cursor: pointer;
     transition: all 300ms;
     color: rgb(212, 161, 141);
     font-family: Montserrat;
-    padding: 35px;
+    
     display: block;
     width: 400px;
     
@@ -94,6 +94,21 @@ label{
     letter-spacing: 1px;
 }
 
+#info {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#info p{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    padding: 5px;
+    color: rgb(175, 175, 175);
+    overflow:auto;
+}
 
     
     
