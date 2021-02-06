@@ -8,11 +8,14 @@ let lockOn = false;
 let bells_mesage = document.getElementById('bells_mesage');
 let strtingMinutes = 0;
 
-
-
-
 printTime();
 testingDevice();
+
+
+
+
+
+
 
 function addTime(minutesAdded){
     minutes += minutesAdded;
@@ -58,8 +61,8 @@ function timeCount(){
 // }
 
 function startTimer(){
-    
-    console.log('Starting version 1.5')
+    cookieTime = new Cookier("cookTime", minutes, 60);
+    cookieTime.writeCookie();
     if (isRunning && inPause == false){
        return;
     }
