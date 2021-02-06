@@ -8,11 +8,9 @@ let lockOn = false;
 let bells_mesage = document.getElementById('bells_mesage');
 let strtingMinutes = 0;
 
+Cookier.getCookie('cookieTime');
 printTime();
 testingDevice();
-
-
-
 
 
 
@@ -61,7 +59,7 @@ function timeCount(){
 // }
 
 function startTimer(){
-    cookieTime = new Cookier("cookTime", minutes, 60);
+    cookieTime = new Cookier("cookieTime", minutes, 60);
     cookieTime.writeCookie();
     if (isRunning && inPause == false){
        return;
