@@ -100,14 +100,28 @@ label{
     height: 30%;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.5);
+    overflow:auto;
+    
+}
+#info::-webkit-scrollbar {
+    width: 12px;               
+}
+#info::-webkit-scrollbar-track {
+    background: #272727;        
+}
+  
+#info::-webkit-scrollbar-thumb {
+    background-color:  #404040;    
+    border-radius: 20px;       
+    border: 3px solid #272727; 
 }
 
 #info p{
     font-family: 'Montserrat';
     font-size: 13px;
     padding: 5px;
-    color: rgb(175, 175, 175);
-    overflow:auto;
+    margin: 10px;
+    color:rgb(212, 161, 141);
 }
 
     

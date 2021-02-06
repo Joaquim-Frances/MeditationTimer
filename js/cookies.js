@@ -17,7 +17,7 @@ class Cookier {
         document.cookie = this.name + "=" + this.value + caducidad + "path=/;";
     }
 
-    getCookie(cookieName){
+    static getCookie(cookieName){
 
         let name = cookieName + "=";
         let infoCookie = document.cookie.split(";");
