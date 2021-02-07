@@ -6,13 +6,14 @@ let inPause = false;
 let fullScreen = false;
 let lockOn = false;
 let bells_mesage = document.getElementById('bells_mesage');
-let strtingMinutes = 0;
+let startingMinutes = 0;
 let cookieValues = "";
 
 testingDevice();
 
 if (Cookier.getCookie('cookieTime')){
     minutes = Cookier.getCookie('cookieTime');
+    startingMinutes = Cookier.getCookie('cookieTime') - 1;
 }
 if (Cookier.getCookie('cookieEvery')){
     bellMinutes = Cookier.getCookie('cookieEvery');
@@ -28,10 +29,6 @@ if (Cookier.getTheCookie(108)){
 }
 
 printTime();
-
-
-
-
 
 function addTime(minutesAdded){
     minutes += minutesAdded;
