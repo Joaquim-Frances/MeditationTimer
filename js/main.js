@@ -8,9 +8,23 @@ let lockOn = false;
 let bells_mesage = document.getElementById('bells_mesage');
 let strtingMinutes = 0;
 
-Cookier.getCookie('cookieTime');
-printTime();
 testingDevice();
+
+if (Cookier.getCookie('cookieTime')){
+    minutes = Cookier.getCookie('cookieTime');
+}
+if (Cookier.getCookie('cookieEvery')){
+    bellMinutes = Cookier.getCookie('cookieEvery');
+}
+if (Cookier.getCookie('cookieWu')){
+    wuUserMinutes = Cookier.getCookie('cookieWu');
+    wuMinutes = wuUserMinutes;
+    showWarmUp();
+    printWuTime();
+}
+
+printTime();
+
 
 
 
@@ -53,14 +67,12 @@ function timeCount(){
     }
 }
 
-// function playSound(){
-//     var gong = new Audio('./src/singingbowl.mp3');
-//     gong.play();
-// }
 
 function startTimer(){
+    
     cookieTime = new Cookier("cookieTime", minutes, 60);
     cookieTime.writeCookie();
+
     if (isRunning && inPause == false){
        return;
     }

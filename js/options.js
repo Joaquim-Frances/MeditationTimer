@@ -140,6 +140,10 @@ function wuTimeCycleDown(){
 
 okIntervalModal.addEventListener('click', function(){
     bellMinutes = document.getElementById('everyMinutes').value;
+    let cookieEvery = new Cookier('cookieEvery', bellMinutes, 60);
+    cookieEvery.writeCookie();
+    let cookieWu = new Cookier('cookieWu', wuUserMinutes, 60);
+    cookieWu.writeCookie();
     intervalModal.style.display = 'none';
     sideMenu.checked = false;
     intervalsList();

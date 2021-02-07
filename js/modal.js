@@ -17,7 +17,7 @@ function testingDevice(){
 
 
 function testCookie(){
-    if(document.cookie == "silenceCheck=on"){
+    if(Cookier.getCookie('silenceCheck')){
         modalOff();
     }else {
         modalOn();
@@ -49,7 +49,7 @@ okModal.addEventListener('click', function(){
     if(document.getElementById('Modalcheck').checked){
         var now = new Date();
         now.setTime(now.getTime() + (60*24*60*60*1000))
-        document.cookie = "silenceCheck = on; expires = " + now.toUTCString(); + "path=/;";
+        document.cookie = "silenceCheck = 77; expires = " + now.toUTCString(); + "path=/;";
         modalOff();
         return;
     }

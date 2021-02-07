@@ -27,13 +27,12 @@ class Cookier {
                 c = c.substring(1);
             }
             if (c.indexOf(name) == 0){
-                minutes = c.substring(name.length, c.lenght);
-                minutes = Number(minutes);
-                console.log(minutes);
-                return minutes;
+                let cookieMinutes = c.substring(name.length, c.lenght);
+                cookieMinutes = Number(cookieMinutes);
+                return cookieMinutes;
             }
         }
-        return "";
+        console.log("No cookies found!");
     }
 
     deleteCookie(cookieName){
