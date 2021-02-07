@@ -1,6 +1,7 @@
 let storedMinute;
 let interval_container = document.getElementById('interval_container');
 let valuesList = [];
+let cookieArray;
 
 function playIntervalBell(bellMinute){
     if(bellMinute == 0){
@@ -33,8 +34,13 @@ function intervalsList(){
     for(var i=0; i<intervalElements.length; i++){ 
         valuesList.push(intervalElements[i].value);
         
-    }    
+    } 
+    cookieValues = valuesList.toString(",");
+    let cookieArray = new Cookier(cookieValues, 108, 60);
+    cookieArray.writeCookie();
+
     console.log(valuesList);
+    console.log(cookieValues);
 }
 
 function playBellsList(){

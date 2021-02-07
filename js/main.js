@@ -7,6 +7,7 @@ let fullScreen = false;
 let lockOn = false;
 let bells_mesage = document.getElementById('bells_mesage');
 let strtingMinutes = 0;
+let cookieValues = "";
 
 testingDevice();
 
@@ -21,6 +22,9 @@ if (Cookier.getCookie('cookieWu')){
     wuMinutes = wuUserMinutes;
     showWarmUp();
     printWuTime();
+}
+if (Cookier.getTheCookie(108)){
+    console.log('test');
 }
 
 printTime();

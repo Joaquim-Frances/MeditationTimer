@@ -20,10 +20,11 @@ class Cookier {
     static getCookie(cookieName){
 
         let name = cookieName + "=";
-        let infoCookie = document.cookie.split(";");
+        let decoded2Cookie = decodeURIComponent(document.cookie);
+        let infoCookie = decoded2Cookie.split(";");
         for (var i = 0; i < infoCookie.length; i++){
             var c = infoCookie[i];
-            while (c.charAt(0)==" ") {
+            while (c.charAt(0)==" "){
                 c = c.substring(1);
             }
             if (c.indexOf(name) == 0){
@@ -35,10 +36,23 @@ class Cookier {
         console.log("No cookies found!");
     }
 
-    deleteCookie(cookieName){
-        this.writeCookie(cookieName, "", 0);
-    }
+    static getTheCookie(cvalue){
+        let value = "=" + cvalue;
+        
+        let allCookies = decodeURIComponent(document.cookie); 
+        
+        let arrayAllCookies = allCookies.split(";");
+        
+        for (var i = 0; i < arrayAllCookies.length; i++){
+            var c = arrayAllCookies[i];  
+            console.log(c);
+            console.log(c.indexOf(value));
+            if (c.indexOf(value) == 0){    
+                console.log("The fucking cookie is here!");
+            }  
+        }
 
+    }
 
 
 
