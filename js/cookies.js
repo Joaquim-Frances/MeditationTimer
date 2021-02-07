@@ -28,6 +28,7 @@ class Cookier {
             }
             if (c.indexOf(name) == 0){
                 minutes = c.substring(name.length, c.lenght);
+                minutes = Number(minutes);
                 console.log(minutes);
                 return minutes;
             }
