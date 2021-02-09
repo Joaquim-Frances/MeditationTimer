@@ -27,7 +27,7 @@ function resetIntervals(){
 }
 
 function intervalsList(){
-    bells_mesage.innerHTML = '';
+    bells_mesage.innerHTML = "";
     valuesList = [];
     let intervalElements = document.getElementsByClassName('afterMinutes');
     

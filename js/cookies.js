@@ -45,11 +45,12 @@ class Cookier {
         
         for (var i = 0; i < arrayAllCookies.length; i++){
             var c = arrayAllCookies[i];  
-            console.log(c);
-            console.log(c.indexOf(value));
-            if (c.indexOf(value) == 0){    
-                console.log("The fucking cookie is here!");
-            }  
+            if (c.indexOf(value) == c.length - 4){  
+                let restaLetras = c.length - 4;  
+                let fcookieName = c.substring(1, restaLetras);
+                let cookieArrayOfValues = fcookieName.split(",");
+                valuesList = cookieArrayOfValues;
+            }
         }
 
     }

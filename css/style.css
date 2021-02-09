@@ -74,7 +74,7 @@ section{
     font-family: sans-serif;
     font-size: 12px;
     font-weight: lighter;
-    color: grey;
+    color: rgb(100, 100, 100);
     padding-top: 10px;
     letter-spacing: 5px;
 }
@@ -146,7 +146,7 @@ section{
 
 #warmup-title, #warmup-minutes, #warmup-dots, #warmup-seconds {
     font-family: Montserrat;
-    color: rgb(212, 161, 141);
+    color: rgb(100, 100, 100);
     font-size: 13px;
     padding-top: 70px;
 }
@@ -167,7 +167,7 @@ section{
     max-height: 5vh;
     width: 100%;
     z-index: -1;
-    color: rgb(212, 161, 141);
+    color: rgb(100, 100, 100);
     font-family: Montserrat;
     font-size: 12px;
 }
