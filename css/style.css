@@ -23,6 +23,7 @@ section{
 }
     
 .video{
+    display: block;
     left: 50%;
     min-height: 100%;
     min-width: 100%;
@@ -33,6 +34,22 @@ section{
     z-index: -1;
 } 
 
+.videoMovile{
+    /* display: none;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    z-index: -1; */
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -20;
+} 
 
 
 
@@ -166,6 +183,9 @@ section{
 @media (max-width: 800px) {
     .video{
         display: none;
+    }
+    .videoMovile{
+        display: block;
     }
 
     .header{
