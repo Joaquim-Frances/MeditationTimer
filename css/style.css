@@ -99,7 +99,7 @@ section{
     
 #minutes, #dots, #seconds{
     font-family: Montserrat;
-    color: rgb(212, 161, 141);
+    color: rgba(212, 161, 141, 1);
     font-size: 25px;
     letter-spacing: 15px;
     padding-top: 70px;
@@ -224,8 +224,9 @@ section{
     }
 
     #minutes, #dots, #seconds{
+        
         font-family: Montserrat;
-        color: rgb(212, 161, 141);
+        color: rgba(240, 165, 135, 0.5);
         font-size: 35px;
         letter-spacing: 25px;
         padding-top: 70px;
@@ -238,6 +239,7 @@ section{
 
     .container{
         height: 30vh;
+        padding-left: 20px;
     }
 
     .fs{
