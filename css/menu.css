@@ -27,6 +27,12 @@ label{
 
 #check{
     display: none;
+    
+}
+
+#icon-id{
+    position: absolute;
+    z-index: 40;
 }
 
 #check:checked  ~ .menu{

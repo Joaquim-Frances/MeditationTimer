@@ -44,10 +44,10 @@ section{
     transform: translate(-50%, -50%);
     background-color: black;
     z-index: -1; */
-    left: 0;
-    top: 10px;
+    
     
     position: fixed;
+    bottom: 0;
     width: 100%;
     z-index: -20;
 } 
@@ -224,15 +224,26 @@ section{
     }
 
     #minutes, #dots, #seconds{
+        
         font-family: Montserrat;
-        color: rgb(212, 161, 141);
+        color:  rgb(100, 100, 100);
         font-size: 35px;
         letter-spacing: 25px;
         padding-top: 70px;
     }
+    
     .warmup-container{
+        top: 5%;  
+    }
+
+    
         
-        top: 5%;
+    .buttons{
+        
+        
+        border: 2px solid black;
+        
+        color:grey;
         
     }
 
