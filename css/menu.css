@@ -69,6 +69,12 @@ label{
     color: grey;
 }
 
+.headerMenu{
+    display:flex;
+    justify-content: center;
+    align-items: left;
+}
+
 .menu li{
     list-style: none;
     padding: 25px;
@@ -76,9 +82,9 @@ label{
     transition: all 300ms;
     color: rgb(212, 161, 141);
     font-family: Montserrat;
-    
+    margin-left: 20px;
     display: block;
-    width: 400px;
+    width: 90%;
     
 }
 
@@ -101,8 +107,9 @@ label{
 }
 
 #info {
-    margin: auto;
-    width: 90%;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 85%;
     height: 40%;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.5);

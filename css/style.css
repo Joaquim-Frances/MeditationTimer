@@ -202,11 +202,7 @@ section{
         
     }
 
-    .headerMenu{
-        display:flex;
-        justify-content: center;
-        align-items: left;
-    }
+    
 
     #title{
         font-size: 20px;
@@ -233,8 +229,8 @@ section{
     }
     .warmup-container{
         
-        top: 65%; 
-        padding-left: 27px;   
+        top: 5%; 
+        padding-left: 17px;   
     }
 
     .buttons{
@@ -244,7 +240,7 @@ section{
     }
 
     .container{
-        height: 150vh;
+        height: 40vh;
     }
 
     .fs{
