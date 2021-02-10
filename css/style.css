@@ -59,7 +59,9 @@ section{
     justify-content: center;
     align-items: center;
     height: 15vh;
-    width: 100%;
+    width: 80%;
+    
+    margin-left: 20px;
 }    
     
 #title{
