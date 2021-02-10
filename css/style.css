@@ -217,22 +217,24 @@ section{
     }
 
     .container{
-        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #minutes, #dots, #seconds{
-        
+
+        font-weight: 500;
         font-family: Montserrat;
         color: rgba(240, 165, 135, 0.5);
-        font-size: 35px;
-        letter-spacing: 25px;
+        font-size: 30px;
+        letter-spacing: 15px;
         padding-top: 70px;
+        
         
     }
     .warmup-container{
         
-        top: 5%; 
-        padding-left: 17px;   
+        top: 2%; 
+        padding-left: 10px;  
     }
 
     .buttons{
