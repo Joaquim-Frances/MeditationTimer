@@ -62,7 +62,15 @@ section{
     height: 15vh;
     width: 100%;
 }
-    
+
+.headerMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+}    
     
 #title{
     font-family: Montserrat;
@@ -104,10 +112,15 @@ section{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 20px;
     height: 33vh;
     width: 100%;
+    z-index: 0;
     
 }
+    
 .buttons{
     font-family: sans-serif;
     font-size: 12px;
@@ -182,6 +195,7 @@ section{
 
 
 @media (max-width: 800px) {
+
     .video{
         display: none;
     }
@@ -190,7 +204,35 @@ section{
     }
 
     .header{
-        height: 25vh;
+        /* height: 25vh; */
+        display: none;
+        
+    }
+
+    .headerMenu{
+        display:flex;
+    }
+
+    #title{
+        font-size: 20px;
+        padding-left: 25px;
+        letter-spacing: 20px;
+    }
+
+    #subtitle{
+        padding-left: 25px;
+    }
+
+    #minutes, #dots, #seconds{
+        font-family: Montserrat;
+        color: rgb(212, 161, 141);
+        font-size: 35px;
+        letter-spacing: 25px;
+        padding-top: 70px;
+    }
+    .warmup-container{
+        
+        top: 5%;
         
     }
 

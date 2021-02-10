@@ -156,7 +156,7 @@ function printTime(){
     }
 
     if(valuesList != 0){
-        bells_mesage.style.display = 'flex';
+        bells_mesage.style.display = 'none'; //sha de cambiar.<------
         
         valuesList.forEach(element => {
              bells_mesage.innerHTML += "Ring a bell at minute " + element + " after start.<br>"
