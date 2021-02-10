@@ -35,19 +35,9 @@ section{
 } 
 
 .videoMovile{
-    /* display: none;
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    z-index: -1; */
-    left: 0;
-    top: 10px;
-    
+
     position: fixed;
+    bottom: 0;
     width: 100%;
     z-index: -20;
 } 
@@ -69,7 +59,9 @@ section{
     justify-content: center;
     align-items: center;
     height: 15vh;
-    width: 100%;
+    width: 80%;
+    
+    margin-left: 20px;
 }    
     
 #title{
@@ -102,7 +94,8 @@ section{
     color: rgba(212, 161, 141, 1);
     font-size: 25px;
     letter-spacing: 15px;
-    padding-top: 70px;
+    
+    padding-left: 22px;
 }
 
 
@@ -114,7 +107,7 @@ section{
     align-items: center;
     position: fixed;
     bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     height: 33vh;
     width: 100%;
     z-index: 0;
@@ -148,14 +141,16 @@ section{
 }
 
 .warmup-container{
+
     position: absolute;
     display: none;
     flex-direction: row;
     justify-content: center;
-    top: 28%;
+    top: 18%;
     height: 5vh;
     width: 100%;
     z-index: -1;
+    
 }
 
 #warmup-title, #warmup-minutes, #warmup-dots, #warmup-seconds {
@@ -193,8 +188,8 @@ section{
     font-size: 12px;
 }
 
-
-@media (max-width: 800px) {
+/* ----------------------------------- */
+@media (max-width: 800px) { 
 
     .video{
         display: none;
@@ -209,18 +204,20 @@ section{
         
     }
 
-    .headerMenu{
-        display:flex;
-    }
+    
 
     #title{
         font-size: 20px;
-        padding-left: 25px;
+        padding-left: 15px;
         letter-spacing: 20px;
     }
 
     #subtitle{
-        padding-left: 25px;
+        padding-left: 15px;
+    }
+
+    .container{
+        padding-left: 20px;
     }
 
     #minutes, #dots, #seconds{
@@ -230,11 +227,18 @@ section{
         font-size: 35px;
         letter-spacing: 25px;
         padding-top: 70px;
+        
     }
     .warmup-container{
         
-        top: 5%;
+        top: 5%; 
+        padding-left: 17px;   
+    }
+
+    .buttons{
         
+        border: 1px solid #404040;
+        color:grey; 
     }
 
     .container{

@@ -55,6 +55,24 @@ class Cookier {
 
     }
 
+    static deleteCookie108(){
+        let value = "=" + cvalue;
+        
+        let allCookies = decodeURIComponent(document.cookie); 
+        
+        let arrayAllCookies = allCookies.split(";");
+        
+        for (var i = 0; i < arrayAllCookies.length; i++){
+            var c = arrayAllCookies[i];  
+            if (c.indexOf(value) == c.length - 4){  
+                let restaLetras = c.length - 4;  
+                let fcookieName = c.substring(1, restaLetras);
+                let deletor = new Cookier(fcookieName, 0, 0);
+                deletor.writeCookie();
+            }
+        }
+    }
+
 
 
 }

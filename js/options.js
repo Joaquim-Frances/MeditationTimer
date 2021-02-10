@@ -146,6 +146,7 @@ okIntervalModal.addEventListener('click', function(){
     cookieWu.writeCookie();
     intervalModal.style.display = 'none';
     sideMenu.checked = false;
+    Cookier.deleteCookie108();
     intervalsList();
     showWarmUp();
     printWuTime();
