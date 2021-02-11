@@ -36,8 +36,10 @@ function intervalsList(){
         
     } 
     cookieValues = valuesList.toString(",");
-    Cookier.deleteCookie108();
-    let cookieArray = new Cookier(cookieValues, 108, 60);
+    if(cookieValues == 0){
+        cookieValues = 0;
+    }
+    let cookieArray = new Cookier('cookieAfter', cookieValues, 60);
     cookieArray.writeCookie();
 
     console.log(valuesList);

@@ -29,6 +29,10 @@ class Cookier {
             }
             if (c.indexOf(name) == 0){
                 let cookieMinutes = c.substring(name.length, c.lenght);
+                if(cookieMinutes.includes(',')){
+                    let arrayMinutes = cookieMinutes.split(",");
+                    valuesList = arrayMinutes;
+                }
                 cookieMinutes = Number(cookieMinutes);
                 return cookieMinutes;
             }
@@ -36,43 +40,6 @@ class Cookier {
         console.log("No cookies found!");
     }
 
-    static getTheCookie(cvalue){
-        let value = "=" + cvalue;
-        
-        let allCookies = decodeURIComponent(document.cookie); 
-        
-        let arrayAllCookies = allCookies.split(";");
-        
-        for (var i = 0; i < arrayAllCookies.length; i++){
-            var c = arrayAllCookies[i];  
-            if (c.indexOf(value) == c.length - 4){  
-                let restaLetras = c.length - 4;  
-                let fcookieName = c.substring(1, restaLetras);
-                let cookieArrayOfValues = fcookieName.split(",");
-                valuesList = cookieArrayOfValues;
-            }
-        }
-
-    }
-
-    static deleteCookie108(){
-        let value = "=" + cvalue;
-        
-        let allCookies = decodeURIComponent(document.cookie); 
-        
-        let arrayAllCookies = allCookies.split(";");
-        
-        for (var i = 0; i < arrayAllCookies.length; i++){
-            var c = arrayAllCookies[i];  
-            if (c.indexOf(value) == c.length - 4){  
-                let restaLetras = c.length - 4;  
-                let fcookieName = c.substring(1, restaLetras);
-                let deletor = new Cookier(fcookieName, 0, 0);
-                deletor.writeCookie();
-            }
-        }
-    }
-
-
+    
 
 }

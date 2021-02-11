@@ -25,7 +25,7 @@ if (Cookier.getCookie('cookieWu')){
     showWarmUp();
     printWuTime();
 }
-if (Cookier.getTheCookie(108)){
+if (Cookier.getCookie('cookieAfter')){
     console.log('test');
 }
 
@@ -157,10 +157,11 @@ function printTime(){
     }
 
     if(valuesList != 0){
-        
         valuesList.forEach(element => {
-             bells_info.innerHTML += "<p>A bell at minute " + element + " after start.</p>"
+             bells_info.innerHTML += "<p>A bell " + element + " minutes after start.</p>"
         });
+    }else if(valuesList == 0){
+        bells_info.innerHTML = "";
     }
 }
 
