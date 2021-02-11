@@ -28,7 +28,6 @@ if (Cookier.getCookie('cookieWu')){
 if (Cookier.getCookie('cookieAfter')){
     valuesList = [];
     valuesList = Cookier.getCookie('cookieAfter');
-    console.log('test cookies');
 }
 
 printTime();
@@ -153,20 +152,17 @@ function printTime(){
     
     if(bellMinutes != 0){
         bells_mesage.style.display = 'flex';
-        document.getElementById('bells_mesage').innerHTML += "A bell ring every " + bellMinutes + " minutes.<br>";
+        bells_info.innerHTML = "<p>A bell every " + bellMinutes + " minutes.</p>";
         
     }else if(bellMinutes == 0){
         bells_mesage.style.display = 'none';
     }
 
     if(valuesList != 0){
-        bells_info.innerHTML = ""; 
+         
         valuesList.forEach(element => {
              bells_info.innerHTML += "<p>A bell " + element + " minutes after start.</p>"
-             console.log('Mecagüen la variable:' + valuesList);
         });
-    }else{
-        bells_info.innerHTML = "";
     }
 }
 

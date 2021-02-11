@@ -32,11 +32,13 @@ function intervalsList(){
     let intervalElements = document.getElementsByClassName('afterMinutes');
     
     for(var i=0; i<intervalElements.length; i++){ 
-        
+
         if(intervalElements[i].value !=0){
 
             valuesList.push(intervalElements[i].value);
 
+        }else{
+            interval_container.innerHTML = "";
         }
         
     } 
@@ -47,9 +49,8 @@ function intervalsList(){
     }
     let cookieArray = new Cookier('cookieAfter', cookieValues, 60);
     cookieArray.writeCookie();
-
-    console.log(valuesList);
-    console.log(cookieValues);
+    // console.log(valuesList);
+    // console.log(cookieValues);
 }
 
 function playBellsList(){
