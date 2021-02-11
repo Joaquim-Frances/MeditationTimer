@@ -28,6 +28,7 @@ if (Cookier.getCookie('cookieWu')){
 if (Cookier.getCookie('cookieAfter')){
     valuesList = [];
     valuesList = Cookier.getCookie('cookieAfter');
+    console.log('test cookies');
 }
 
 printTime();
@@ -136,7 +137,8 @@ function pauseTimer(){
 
 
 function printTime(){
-    bells_mesage.innerHTML = '';
+    bells_mesage.innerHTML = "";
+    bells_info.innerHTML = "";
     if(seconds < 10){
         document.getElementById("seconds").innerHTML= "0" + seconds; 
     }else if(seconds >= 10 && seconds <= 59){
@@ -158,10 +160,12 @@ function printTime(){
     }
 
     if(valuesList != 0){
+        bells_info.innerHTML = ""; 
         valuesList.forEach(element => {
              bells_info.innerHTML += "<p>A bell " + element + " minutes after start.</p>"
+             console.log('Mecagüen la variable:' + valuesList);
         });
-    }else if(valuesList == 0){
+    }else{
         bells_info.innerHTML = "";
     }
 }

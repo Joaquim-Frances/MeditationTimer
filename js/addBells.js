@@ -32,9 +32,15 @@ function intervalsList(){
     let intervalElements = document.getElementsByClassName('afterMinutes');
     
     for(var i=0; i<intervalElements.length; i++){ 
-        valuesList.push(intervalElements[i].value);
+        
+        if(intervalElements[i].value !=0){
+
+            valuesList.push(intervalElements[i].value);
+
+        }
         
     } 
+    
     cookieValues = valuesList.toString(",");
     if(cookieValues == 0){
         cookieValues = 0;

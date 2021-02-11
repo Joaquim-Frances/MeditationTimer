@@ -150,7 +150,7 @@ okIntervalModal.addEventListener('click', function(){
     showWarmUp();
     printWuTime();
     printTime();
-})
+});
 
 
 
