@@ -31,7 +31,7 @@ class Cookier {
                 let cookieMinutes = c.substring(name.length, c.lenght);
                 if(cookieMinutes.includes(',')){
                     let arrayMinutes = cookieMinutes.split(",");
-                    valuesList = arrayMinutes;
+                    return arrayMinutes;
                 }
                 cookieMinutes = Number(cookieMinutes);
                 return cookieMinutes;

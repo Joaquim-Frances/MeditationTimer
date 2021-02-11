@@ -26,7 +26,8 @@ if (Cookier.getCookie('cookieWu')){
     printWuTime();
 }
 if (Cookier.getCookie('cookieAfter')){
-    console.log('test');
+    valuesList = [];
+    valuesList = Cookier.getCookie('cookieAfter');
 }
 
 printTime();
