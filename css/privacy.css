@@ -1,18 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 
 .privacyBody {
-    background-color: bisque;
-    margin: 20px;
+  margin: 20px;
+  background: #272727;
 }
 
 .title {
+  font-family: Montserrat;
+  color: rgb(146, 146, 146);
+  font-size: 25px;
+  padding-top: 70px;
+  margin-left: 70px;
+}
+
+p {
+  font-family: Montserrat;
+  color: rgb(146, 146, 146);
+  margin-left: 70px;
+}
+
+h2 {
     font-family: Montserrat;
-    color: rgb(100, 100, 100);
-    font-size: 25px;
-    padding-top: 70px;
+    color: rgb(146, 146, 146);
     margin-left: 70px;
 }
 
+ul {
+    font-family: Montserrat;
+    color: rgb(146, 146, 146);
+    margin-left: 70px;
+}
+
+li {
+    font-family: Montserrat;
+    color: rgb(146, 146, 146);
+    margin-left: 70px;
+}

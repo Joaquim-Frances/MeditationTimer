@@ -105,6 +105,11 @@ label{
     
 }
 
+.privacyLink {
+    color: rgb(212, 161, 141);
+    text-decoration: none;
+}
+
 .menu li:hover{
     background: rgba(0,0,0,0.3);
 }    
